@@ -35,6 +35,26 @@
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <34 35>;
         };
+
+        BS {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <9 8>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <20 21>;
+        };
+
+        lclk {
+            bindings = <&mkp LCLK>;
+            key-positions = <18 19>;
+        };
+
+        rclk {
+            bindings = <&mkp RCLK>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
