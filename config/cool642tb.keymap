@@ -109,7 +109,7 @@
 &kp RSHIFT     &kp TAB    &kp LCTRL          &kp RGUI       &kp LEFT_ALT  &kp UNDERSCORE  &to 1                     &bt BT_CLR_ALL                                            &kp LEFT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
         };
 
         number {
@@ -120,7 +120,7 @@
 &bt BT_PRV       &bt BT_NXT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &mo 2             &kp PLUS           &kp EQUAL                             &kp N0
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         ARROW {
