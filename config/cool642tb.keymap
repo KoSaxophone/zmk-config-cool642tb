@@ -70,6 +70,16 @@
             bindings = <&kp LS(LC(TAB))>;
             key-positions = <0 10 22>;
         };
+
+        up {
+            bindings = <&mmv MOVE_UP>;
+            key-positions = <1 3 2>;
+        };
+
+        pagedown {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <35 36 37>;
+        };
     };
 
     macros {
