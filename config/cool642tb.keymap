@@ -65,6 +65,11 @@
             bindings = <&kp SPACE>;
             key-positions = <40 41>;
         };
+
+        tabctrlshift {
+            bindings = <&kp LS(LC(TAB))>;
+            key-positions = <0 10 22>;
+        };
     };
 
     macros {
