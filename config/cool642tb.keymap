@@ -117,10 +117,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W      &kp E             &kp R         &kp T                                                       &kp Y      &kp U  &kp I      &kp O       &kp P
-&kp A           &kp S      &kp D             &kp F         &kp G      &kp LG(LS(NUMBER_4))    &lt 5 MINUS              &kp H      &kp J  &kp K      &kp L       &kp ENTER
-&kp Z           &kp X      &kp C             &kp V         &kp B      &lt 4 LEFT_PARENTHESIS  &lt 3 RIGHT_PARENTHESIS  &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LANG2  &lt 2 SPACE             &lt 1 SPACE              &kp LANG1                                &kp BACKSPACE
+&kp Q           &kp W      &kp E             &kp R         &kp T                                                            &kp Y      &kp U  &kp I      &kp O       &kp P
+&kp A           &kp S      &kp D             &kp F         &kp G           &kp LG(LS(NUMBER_4))    &lt 5 MINUS              &kp H      &kp J  &kp K      &kp L       &kp ENTER
+&kp Z           &kp X      &kp C             &kp V         &kp B           &lt 4 LEFT_PARENTHESIS  &lt 3 RIGHT_PARENTHESIS  &kp N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_COMMAND  &kp LEFT_ALT  &kp LANGUAGE_2  &lt 2 SPACE             &lt 1 SPACE              &kp LANG1                                &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -128,10 +128,10 @@
 
         shortcut {
             bindings = <
-&kp F1         &kp F2     &kp F3             &kp F4         &kp F5                                                  &kp F6          &kp F7          &kp F8        &kp F9      &kp F10
-&kp LS(LG(Z))  &kp LG(S)  &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &kp N1          &kp INT_KATAKANAHIRAGANA  &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &kp ENTER
-&kp LG(Z)      &kp LG(X)  &kp LG(C)          &kp LG(V)      &kp B         &kp LEFT_BRACE  &kp RIGHT_BRACE           &kp LC(SPACE)   &kp RG(SPACE)   &kp COMMA     &kp PERIOD  &kp QUESTION
-&kp RSHIFT     &kp TAB    &kp LCTRL          &kp RGUI       &kp LEFT_ALT  &kp UNDERSCORE  &to 1                     &bt BT_CLR_ALL                                            &kp LEFT_SHIFT
+&kp F1         &kp F2     &kp F3             &kp F4     &kp F5                                                  &kp F6          &kp F7          &kp F8        &kp F9      &kp F10
+&kp LS(LG(Z))  &kp LG(S)  &kp DOUBLE_QUOTES  &kp LG(F)  &kp COLON     &kp N1          &kp INT_KATAKANAHIRAGANA  &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &kp ENTER
+&kp LG(Z)      &kp LG(X)  &kp LG(C)          &kp LG(V)  &kp B         &kp LEFT_BRACE  &kp RIGHT_BRACE           &kp LC(SPACE)   &kp RG(SPACE)   &kp COMMA     &kp PERIOD  &kp QUESTION
+&kp RSHIFT     &kp TAB    &kp LCTRL          &kp RGUI   &kp LEFT_ALT  &kp UNDERSCORE  &to 1                     &bt BT_CLR_ALL                                            &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
