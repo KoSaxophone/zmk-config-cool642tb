@@ -134,7 +134,7 @@
 &kp RSHIFT     &kp TAB    &kp LCTRL          &kp RGUI   &kp LEFT_ALT  &kp UNDERSCORE  &to 1                     &bt BT_CLR_ALL                                            &kp LEFT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         number {
