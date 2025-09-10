@@ -129,7 +129,7 @@
         shortcut {
             bindings = <
 &kp F1         &kp F2     &kp F3             &kp F4     &kp F5                                         &kp F6          &kp F7          &kp F8        &kp F9      &kp F10
-&kp LS(LG(Z))  &kp LG(S)  &kp DOUBLE_QUOTES  &kp LG(F)  &kp COLON     &kp N1          &kp UNDERSCORE   &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &kp ENTER
+&kp LS(LG(Z))  &kp LG(S)  &kp DOUBLE_QUOTES  &kp LG(F)  &kp COLON     &kp LG(LS(L))   &kp UNDERSCORE   &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &kp ENTER
 &kp LG(Z)      &kp LG(X)  &kp LG(C)          &kp LG(V)  &kp B         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LC(SPACE)   &kp RG(SPACE)   &kp COMMA     &kp PERIOD  &kp QUESTION
 &kp RSHIFT     &kp TAB    &kp LCTRL          &kp RGUI   &kp LEFT_ALT  &kp LG(SPACE)   &to 1            &bt BT_CLR_ALL                                            &kp LEFT_SHIFT
             >;
@@ -140,7 +140,7 @@
         symbol {
             bindings = <
 &kp N1           &kp N2       &kp N3        &kp N4        &kp N5                                             &kp N6        &kp N7  &kp EQUAL      &kp TILDE         &kp PIPE
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR    &kp PERCENT   &to 0             &kp UNDERSCORE     &kp SLASH     &kp N4  &kp N5         &kp N6            &kp AT_SIGN
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH      &kp DOLLAR    &kp PERCENT   &kp LG(LS(N5))    &kp UNDERSCORE     &kp SLASH     &kp N4  &kp N5         &kp N6            &kp AT_SIGN
 &kp PLUS         &kp MINUS    &kp ASTERISK  &kp SLASH     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK  &kp N1  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
 &bt BT_PRV       &bt BT_NXT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &mo 2             &kp PLUS           &kp EQUAL                                              &kp BACKSPACE
             >;
@@ -150,10 +150,10 @@
 
         ARROW {
             bindings = <
-&kp Q       &kp W      &kp E     &kp R     &kp T                        &kp Y        &kp U  &kp I      &kp O       &kp P
-&kp A       &kp S      &kp D     &kp F     &kp G        &kp N1  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
-&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 3 SPACE  &kp N5  &kp N6  &lt 1 SPACE                                &kp BSPC
+&kp Q       &kp W      &kp E     &kp R     &kp T                               &kp Y        &kp U  &kp I      &kp O       &kp P
+&kp A       &kp S      &kp D     &kp F     &kp G        &kp LG(LS(M))  &kp N2  &kp H        &kp J  &kp K      &kp L       &kp ENTER
+&kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3         &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp BACKSLASH
+&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 3 SPACE  &kp N5         &kp N6  &lt 1 SPACE                                &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp LG(RIGHT_BRACKET) LG(LEFT_BRACKET)>;
@@ -161,10 +161,10 @@
 
         number {
             bindings = <
-&kp N1      &kp N2   &kp N3            &kp N4        &kp N5                           &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-&kp A       &kp S    &kp D             &kp F         &kp G     &kp N1    &kp N2       &kp H   &kp N4  &kp N5  &kp N6  &kp ENTER
-&kp Z       &kp X    &kp C             &kp V         &kp B     &kp N3    &kp N4       &kp N   &kp N1  &kp N2  &kp N3  &kp SLASH
-&kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &mkp MB1  &mkp MB2  &lt 1 SPACE  &kp N0                          &kp N0
+&kp N1      &kp N2   &kp N3            &kp N4        &kp N5                               &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+&kp A       &kp S    &kp D             &kp F         &kp G     &kp LS(LG(N1))  &kp MINUS  &kp H   &kp N4  &kp N5  &kp N6  &kp AT_SIGN
+&kp Z       &kp X    &kp C             &kp V         &kp B     &mo 4           &kp PLUS   &kp N   &kp N1  &kp N2  &kp N3  &kp SLASH
+&kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &mkp MB1  &mkp MB2        &kp EQUAL  &kp N0                          &kp N0
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
