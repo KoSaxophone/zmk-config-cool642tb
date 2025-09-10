@@ -131,7 +131,7 @@
 &kp F1         &kp F2     &kp F3             &kp F4     &kp F5                                         &kp F6          &kp F7          &kp F8        &kp F9      &kp F10
 &kp LS(LG(Z))  &kp LG(S)  &kp DOUBLE_QUOTES  &kp LG(F)  &kp COLON     &kp N1          &kp UNDERSCORE   &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT   &kp ENTER
 &kp LG(Z)      &kp LG(X)  &kp LG(C)          &kp LG(V)  &kp B         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LC(SPACE)   &kp RG(SPACE)   &kp COMMA     &kp PERIOD  &kp QUESTION
-&kp RSHIFT     &kp TAB    &kp LCTRL          &kp RGUI   &kp LEFT_ALT  &kp UNDERSCORE  &to 1            &bt BT_CLR_ALL                                            &kp LEFT_SHIFT
+&kp RSHIFT     &kp TAB    &kp LCTRL          &kp RGUI   &kp LEFT_ALT  &kp LG(SPACE)   &to 1            &bt BT_CLR_ALL                                            &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
