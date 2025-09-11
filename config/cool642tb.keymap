@@ -140,7 +140,7 @@
         symbol {
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR    &kp PERCENT                                        &kp AMPERSAND  &kp SQT  &kp EQUAL      &kp TILDE         &kp PIPE
-&kp EXCLAMATION  &kp AT_SIGN        &kp HASH      &kp DOLLAR    &kp PERCENT   &kp LG(LS(N5))    &kp UNDERSCORE     &kp SLASH      &kp N4   &kp N5         &kp N6            &kp AT_SIGN
+&kp EXCLAMATION  &kp AT_SIGN        &kp HASH      &kp DOLLAR    &kp PERCENT   &kp LG(LS(N5))    &kp UNDERSCORE     &kp SLASH      &kp N4   &kp N5         &kp N6            &kp ENTER
 &kp PLUS         &kp MINUS          &kp ASTERISK  &kp SLASH     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK   &kp N1   &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
 &bt BT_PRV       &bt BT_NXT         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &mo 2             &kp PLUS           &kp EQUAL                                                &kp BACKSPACE
             >;
@@ -162,7 +162,7 @@
         number {
             bindings = <
 &kp N1      &kp N2   &kp N3            &kp N4        &kp N5                               &kp N6        &kp N7  &kp N8  &kp N9  &kp N0
-&kp A       &kp S    &kp D             &kp F         &kp G     &kp LS(LG(N1))  &kp MINUS  &kp SLASH     &kp N4  &kp N5  &kp N6  &kp PERCENT
+&kp A       &kp S    &kp D             &kp F         &kp G     &kp LS(LG(N1))  &kp MINUS  &kp SLASH     &kp N4  &kp N5  &kp N6  &kp ENTER
 &kp Z       &kp X    &kp C             &kp V         &kp B     &mo 4           &kp PLUS   &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp SLASH
 &kp ESCAPE  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &mkp MB1  &mkp MB2        &kp EQUAL  &kp N0                                &kp BACKSPACE
             >;
