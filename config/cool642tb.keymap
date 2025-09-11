@@ -58,7 +58,7 @@
 
         spacel {
             bindings = <&kp SPACE>;
-            key-positions = <38 37>;
+            key-positions = <39 38>;
         };
 
         spacer {
@@ -89,6 +89,16 @@
         pageleft {
             bindings = <&msc SCRL_RIGHT>;
             key-positions = <34 22 10>;
+        };
+
+        english {
+            bindings = <&kp LANG2>;
+            key-positions = <26 27>;
+        };
+
+        japanese {
+            bindings = <&kp LANG1>;
+            key-positions = <28 29>;
         };
     };
 
