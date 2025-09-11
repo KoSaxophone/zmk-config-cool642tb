@@ -145,7 +145,7 @@
 &bt BT_PRV       &bt BT_NXT   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &mo 2             &kp PLUS           &kp EQUAL                                              &kp BACKSPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
         };
 
         ARROW {
@@ -156,7 +156,7 @@
 &kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 3 SPACE  &kp N5         &kp N6  &lt 1 SPACE                                &kp BSPC
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(RIGHT_BRACKET) LG(LEFT_BRACKET)>;
+            sensor-bindings = <&inc_dec_kp LG(LEFT_BRACKET) LG(RIGHT_BRACKET)>;
         };
 
         number {
