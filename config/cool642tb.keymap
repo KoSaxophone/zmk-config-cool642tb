@@ -154,10 +154,10 @@
 
         symbol {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR  &kp PERCENT                                       &kp AMPERSAND      &kp SQT  &kp TILDE      &kp GRAVE         &kp PIPE
-&kp A            &kp S              &kp D         &kp F       &kp G        &kp LG(LS(N5))    &kp UNDERSCORE     &kp PLUS           &kp J    &kp K          &kp L             &kp BACKSLASH
-&kp Z            &kp S              &kp D         &kp F       &kp G        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL          &kp M    &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
-&bt BT_PRV       &bt BT_NXT         &bt BT_SEL 0  &kp GRAVE   &kp SQT      &mo 2             &kp MINUS          &kp DOUBLE_QUOTES                                            &kp AT_SIGN
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR  &kp PERCENT                                       &kp AMPERSAND      &kp SQT       &kp TILDE      &kp GRAVE         &kp PIPE
+&kp A            &kp S              &kp D         &kp F       &kp G        &kp LG(LS(N5))    &kp UNDERSCORE     &kp PLUS           &kp N4        &kp N5         &kp N6            &kp BACKSLASH
+&kp Z            &kp X              &kp C         &kp V       &kp B        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL          &kp NUMBER_1  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
+&bt BT_PRV       &bt BT_NXT         &bt BT_SEL 0  &kp GRAVE   &kp SQT      &mo 2             &kp MINUS          &kp DOUBLE_QUOTES                                                 &kp AT_SIGN
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LEFT_BRACKET) LG(RIGHT_BRACKET)>;
@@ -165,10 +165,10 @@
 
         layer_4 {
             bindings = <
-&trans          &kp UP_ARROW    &kp UP_ARROW    &kp UP_ARROW    &trans                                          &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ARROW  &trans          &trans          &trans          &kp RIGHT_ARROW  &kp LS(LG(M))  &kp UNDERSCORE  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_ARROW  &trans          &trans          &trans          &kp RIGHT_ARROW  &trans         &trans          &trans  &trans  &trans  &trans  &trans
-&trans          &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &trans           &trans         &trans          &trans                          &trans
+&kp F1          &kp UP_ARROW    &kp UP_ARROW    &kp UP_ARROW    &kp F5                                             &kp LA(LG(F))  &kp F7  &kp F8  &kp F9  &kp LA(LG(A))
+&kp LEFT_ARROW  &kp LG(S)       &kp D           &kp LG(F)       &kp RIGHT_ARROW  &kp LS(LG(M))    &kp UNDERSCORE   &kp LA(LG(B))  &kp F4  &kp F5  &kp F6  &kp LA(LG(K))
+&kp LEFT_ARROW  &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp RIGHT_ARROW  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LA(LG(G))  &kp F1  &kp F2  &kp F3  &kp LA(LG(T))
+&kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp LA(LG(C))    &mo 3                                  &kp LG(LS(SPACE))
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
@@ -179,10 +179,10 @@
 &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                       &kp N6     &kp N7  &kp N8  &kp N9  &kp N0
 &kp A   &kp S   &kp D   &kp F   &kp G   &kp LS(LG(N1))    &kp UNDERSCORE     &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ASTERISK
 &kp Z   &kp X   &kp C   &kp V   &kp B   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp SLASH
-&kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &mo 4             &kp MINUS          &kp N0                             &kp PERCENT
+&kp N1  &kp N2  &kp N3  &kp N4  &mo 4   &mo 4             &kp MINUS          &kp N0                             &kp PERCENT
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT_ARROW LG(LC(RIGHT_ARROW))>;
+            sensor-bindings = <&inc_dec_kp LA(LG(SEMICOLON)) LG(LA(MINUS))>;
         };
     };
 };
