@@ -130,7 +130,7 @@
 &kp Q           &kp W      &kp E             &kp R         &kp T                                                         &kp Y        &kp U  &kp I      &kp O       &kp P
 &kp A           &kp S      &kp D             &kp F         &kp G            &kp LG(LS(NUMBER_4))  &kp MINUS              &kp H        &kp J  &kp K      &kp L       &kp LC(SPACE)
 &kp Z           &kp X      &kp C             &kp V         &kp B            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 4 SEMICOLON  &lt 2 TILDE           &lt 1 EQUAL            &lt 3 COLON                                &kp LC(LG(SPACE))
+&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 2 SEMICOLON  &lt 4 TILDE           &lt 1 EQUAL            &lt 3 COLON                                &kp LC(LG(SPACE))
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -138,46 +138,46 @@
 
         shortcut {
             bindings = <
-&kp F1         &kp F2     &kp F3             &kp F4     &kp F5                                      &kp F6             &kp F7          &kp F8         &kp F9            &kp F10
-&kp LS(LG(Z))  &kp LG(S)  &kp DOUBLE_QUOTES  &kp LG(F)  &kp COLON  &kp LG(LS(L))   &kp UNDERSCORE   &kp LEFT           &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT         &kp ENTER
-&kp LG(Z)      &kp LG(X)  &kp LG(C)          &kp LG(V)  &kp B      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LC(SPACE)      &kp RG(SPACE)   &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
-&kp N1         &kp N2     &kp LCTRL          &kp GRAVE  &kp SQT    &mo 3           &to 1            &kp DOUBLE_QUOTES                                                   &kp AT_SIGN
+&kp F1         &kp F2     &kp F3             &kp F4     &kp F5                                      &kp F6             &kp F7  &kp F8  &kp F9  &kp F9
+&kp LS(LG(Z))  &kp LG(S)  &kp DOUBLE_QUOTES  &kp LG(F)  &kp COLON  &kp LG(LS(L))   &kp UNDERSCORE   &kp F4             &kp F4  &kp F5  &kp F6  &kp F6
+&kp LG(Z)      &kp LG(X)  &kp LG(C)          &kp LG(V)  &kp B      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp F1             &kp F1  &kp F2  &kp F3  &kp F3
+&kp N1         &kp N2     &kp LCTRL          &kp GRAVE  &kp SQT    &mo 3           &to 1            &kp DOUBLE_QUOTES                          &kp AT_SIGN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        number {
-            bindings = <
-&none   &none   &none   &none   &none                                   &none         &none   &none  &none  &none
-&kp A   &kp S   &kp D   &kp F   &kp G   &kp LS(LG(N1))  &kp UNDERSCORE  &kp SLASH     &none   &none  &none  &kp ENTER
-&kp Z   &kp X   &kp C   &kp V   &kp B   &mo 4           &mo 2           &none         &kp N1  &none  &none  &kp N0
-&kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6          &kp N7          &kp NUMBER_8                        &kp N9
-            >;
-
-            sensor-bindings = <&inc_dec_kp LEFT_ARROW LG(LC(RIGHT_ARROW))>;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
-        };
-
         symbol {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR  &kp PERCENT                                       &kp AMPERSAND      &kp SQT  &kp EQUAL      &kp TILDE         &kp PIPE
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR  &kp PERCENT                                       &kp AMPERSAND      &kp SQT  &kp TILDE      &kp GRAVE         &kp PIPE
 &kp EXCLAMATION  &kp AT_SIGN        &kp HASH      &kp DOLLAR  &kp PERCENT  &kp LG(LS(N5))    &kp UNDERSCORE     &kp SLASH          &kp N4   &kp N5         &kp N6            &kp ENTER
 &kp PLUS         &kp MINUS          &kp ASTERISK  &kp SLASH   &kp EQUAL    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK       &kp N1   &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
 &bt BT_PRV       &bt BT_NXT         &bt BT_SEL 0  &kp GRAVE   &kp SQT      &mo 3             &mo 1              &kp DOUBLE_QUOTES                                            &kp AT_SIGN
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LEFT_BRACKET) LG(RIGHT_BRACKET)>;
+        };
+
+        layer_4 {
+            bindings = <
+&trans          &kp UP_ARROW    &kp UP_ARROW    &kp UP_ARROW    &trans                                          &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ARROW  &trans          &trans          &trans          &kp RIGHT_ARROW  &kp LS(LG(M))  &kp UNDERSCORE  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ARROW  &trans          &trans          &trans          &kp RIGHT_ARROW  &trans         &trans          &trans  &trans  &trans  &trans  &trans
+&trans          &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &trans           &trans         &trans          &trans                          &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
+        };
+
+        number {
+            bindings = <
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                       &kp N6     &kp N7  &kp N8  &kp N9  &kp N0
+&kp A   &kp S   &kp D   &kp F   &kp G   &kp LS(LG(N1))    &kp UNDERSCORE     &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ASTERISK
+&kp Z   &kp X   &kp C   &kp V   &kp B   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp SLASH
+&kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &mo 4             &kp MINUS          &kp N0                             &kp PERCENT
+            >;
+
+            sensor-bindings = <&inc_dec_kp LEFT_ARROW LG(LC(RIGHT_ARROW))>;
         };
     };
 };
