@@ -1,17 +1,14 @@
 #include "cool642tb.dtsi"
+#include <input/processors.dtsi>   /* ← 追加：Temporary Layer を使う */
 
-&default_transform {
-    col-offset = <6>;
-};
+&default_transform { col-offset = <6>; };
 
 &kscan0 {
-        col-gpios
-            = <&xiao_d 10 GPIO_ACTIVE_HIGH>
-            , <&xiao_d 9 GPIO_ACTIVE_HIGH> 
-            , <&xiao_d 8 GPIO_ACTIVE_HIGH> 
-            , <&xiao_d 7 GPIO_ACTIVE_HIGH> 
-            , <&gpio0 10 GPIO_ACTIVE_HIGH>
-            ;
+    col-gpios = <&xiao_d 10 GPIO_ACTIVE_HIGH>,
+                <&xiao_d 9  GPIO_ACTIVE_HIGH>,
+                <&xiao_d 8  GPIO_ACTIVE_HIGH>,
+                <&xiao_d 7  GPIO_ACTIVE_HIGH>,
+                <&gpio0 10  GPIO_ACTIVE_HIGH>;
 };
 
 / {
@@ -25,16 +22,15 @@
     spi0_default: spi0_default {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 4)>,
-                <NRF_PSEL(SPIM_MISO, 0, 4)>;
+                    <NRF_PSEL(SPIM_MOSI, 0, 4)>,
+                    <NRF_PSEL(SPIM_MISO, 0, 4)>;
         };
     };
-
     spi0_sleep: spi0_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 4)>,
-                <NRF_PSEL(SPIM_MISO, 0, 4)>;
+                    <NRF_PSEL(SPIM_MOSI, 0, 4)>,
+                    <NRF_PSEL(SPIM_MISO, 0, 4)>;
             low-power-enable;
         };
     };
@@ -56,7 +52,21 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        /* automouse-layer は削除して Input Processor に一本化します */
+        /* ドライバ側 AML は使わない */
         scroll-layers = <1>;
     };
 };
+
+/* ==== AML: Temporary Layer 設定（右手だけに定義） ==== */
+/* 打鍵直後の誤発動抑制。まず 200ms から開始し、必要に応じて微調整 */
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+    /* 必要があれば：
+       excluded-positions = <18 19 21 34>;
+    */
+};
+
+/* トラックボール入力中だけ MOUSE(=4) をON。無入力 200msで自動解除 */
+&trackball_listener {
+    input-processors = <&zip_temp_layer 4 200>;
+}
