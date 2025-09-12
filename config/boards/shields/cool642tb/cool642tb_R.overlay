@@ -70,5 +70,4 @@
 
 /* トラックボール入力中だけ MOUSE(=4) をON。無入力200msで解除 */
 &trackball_listener {
-    input-processors = <&zip_temp_layer 4 200>;
 };
