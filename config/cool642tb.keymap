@@ -100,6 +100,11 @@
             bindings = <&kp LANG1>;
             key-positions = <28 29>;
         };
+
+        tabctrl {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <11 23>;
+        };
     };
 
     macros {
@@ -136,12 +141,12 @@
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
-        shortcut {
+        shortcutfunction {
             bindings = <
-&kp F1         &kp F2     &kp F3             &kp F4     &kp F5                                      &kp F6             &kp F7  &kp F8  &kp F9  &kp F9
-&kp LS(LG(Z))  &kp LG(S)  &kp DOUBLE_QUOTES  &kp LG(F)  &kp COLON  &kp LG(LS(L))   &kp UNDERSCORE   &kp F4             &kp F4  &kp F5  &kp F6  &kp F6
-&kp LG(Z)      &kp LG(X)  &kp LG(C)          &kp LG(V)  &kp B      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp F1             &kp F1  &kp F2  &kp F3  &kp F3
-&kp N1         &kp N2     &kp LCTRL          &kp GRAVE  &kp SQT    &mo 3           &to 1            &kp DOUBLE_QUOTES                          &kp AT_SIGN
+&kp F1         &kp F2         &kp F3         &kp F4         &kp F5                                          &kp LA(LG(F))  &kp F7  &kp F8  &kp F9  &kp F9
+&kp LG(A)      &kp LG(S)      &kp D          &kp LG(F)      &kp G          &kp LG(LS(L))   &kp UNDERSCORE   &kp LA(LG(B))  &kp F4  &kp F5  &kp F6  &kp F6
+&kp LG(Z)      &kp LG(X)      &kp LG(C)      &kp LG(V)      &kp B          &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LA(LG(G))  &kp F1  &kp F2  &kp F3  &kp F3
+&kp LG(LS(Z))  &kp LG(LA(D))  &kp LG(LA(O))  &kp LG(LA(T))  &kp LA(LG(V))  &kp LA(LG(D))   &to 1            &kp LA(LG(C))                          &kp LG(LC(SPACE))
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -150,9 +155,9 @@
         symbol {
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR  &kp PERCENT                                       &kp AMPERSAND      &kp SQT  &kp TILDE      &kp GRAVE         &kp PIPE
-&kp EXCLAMATION  &kp AT_SIGN        &kp HASH      &kp DOLLAR  &kp PERCENT  &kp LG(LS(N5))    &kp UNDERSCORE     &kp SLASH          &kp N4   &kp N5         &kp N6            &kp ENTER
-&kp PLUS         &kp MINUS          &kp ASTERISK  &kp SLASH   &kp EQUAL    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp ASTERISK       &kp N1   &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
-&bt BT_PRV       &bt BT_NXT         &bt BT_SEL 0  &kp GRAVE   &kp SQT      &mo 3             &mo 1              &kp DOUBLE_QUOTES                                            &kp AT_SIGN
+&kp A            &kp S              &kp D         &kp F       &kp G        &kp LG(LS(N5))    &kp UNDERSCORE     &kp PLUS           &kp J    &kp K          &kp L             &kp BACKSLASH
+&kp Z            &kp S              &kp D         &kp F       &kp G        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL          &kp M    &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
+&bt BT_PRV       &bt BT_NXT         &bt BT_SEL 0  &kp GRAVE   &kp SQT      &mo 2             &kp MINUS          &kp DOUBLE_QUOTES                                            &kp AT_SIGN
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LEFT_BRACKET) LG(RIGHT_BRACKET)>;
