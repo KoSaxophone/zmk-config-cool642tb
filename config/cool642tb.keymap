@@ -191,7 +191,7 @@
 &kp LS(LG(Z))  &kp LA(LG(D))  &kp LA(LG(O))  &kp LA(LG(T))  &kp LA(LG(V))  &kp LA(LG(D))     &kp MINUS          &kp N0                             &kp AT_SIGN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
+            sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
         };
     };
 };
