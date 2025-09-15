@@ -104,6 +104,16 @@
             bindings = <&kp LC(TAB)>;
             key-positions = <11 23>;
         };
+
+        cmdright {
+            bindings = <&kp LG(RIGHT_ARROW)>;
+            key-positions = <36 42>;
+        };
+
+        cmdleft {
+            bindings = <&kp LG(LEFT_ARROW)>;
+            key-positions = <36 40>;
+        };
     };
 
     macros {
