@@ -114,6 +114,21 @@
             bindings = <&kp LG(LEFT_ARROW)>;
             key-positions = <36 40>;
         };
+
+        pagedown2 {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <38 37 36>;
+        };
+
+        pagedown3 {
+            bindings = <&msc SCRL_UP>;
+            key-positions = <38 39 37>;
+        };
+
+        pageup2 {
+            bindings = <&msc SCRL_DOWN>;
+            key-positions = <4 3 2>;
+        };
     };
 
     macros {
