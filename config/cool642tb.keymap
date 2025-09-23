@@ -169,7 +169,7 @@
 &kp Q           &kp W      &kp E             &kp R         &kp T                                                         &kp Y        &kp U  &kp I      &kp O       &kp P
 &kp A           &kp S      &kp D             &kp F         &kp G            &kp LG(LS(NUMBER_4))  &kp LC(SPACE)          &kp H        &kp J  &kp K      &kp L       &kp MINUS
 &kp Z           &kp X      &kp C             &kp V         &kp B            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 4 SEMICOLON  &lt 2 SPACE           &lt 1 BACKSPACE        &lt 3 COLON                                &kp MINUS
+&kp LEFT_SHIFT  &kp LCTRL  &kp LEFT_COMMAND  &kp LEFT_ALT  &lt 4 SEMICOLON  &lt 2 SPACE           &lt 1 BACKSPACE        &lt 3 COLON                                &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -180,7 +180,7 @@
 &kp F1                &kp F2             &kp F3                        &kp F4                        &kp F5                                                &kp LA(LG(F))  &kp F7  &kp F8  &kp F9  &kp F9
 &kp LG(A)             &kp LG(LS(Z))      &kp D                         &kp LG(F)                     &kp G         &kp LG(LS(L))          &kp LC(SPACE)    &kp LA(LG(B))  &kp F4  &kp F5  &kp F6  &kp UNDERSCORE
 &kp LG(Z)             &kp LG(X)          &kp LG(C)                     &kp LG(V)                     &kp B         &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp LA(LG(G))  &kp F1  &kp F2  &kp F3  &kp F3
-&kp LG(LEFT_BRACKET)  &kp C_VOLUME_DOWN  &kp LG(LA(C_BRIGHTNESS_INC))  &kp LG(LA(C_BRIGHTNESS_DEC))  &kp C_VOL_UP  &kp LG(RIGHT_BRACKET)  &to 1            &kp LA(LG(C))                          &kp UNDERSCORE
+&kp LG(LEFT_BRACKET)  &kp C_VOLUME_DOWN  &kp LG(LA(C_BRIGHTNESS_INC))  &kp LG(LA(C_BRIGHTNESS_DEC))  &kp C_VOL_UP  &kp LG(RIGHT_BRACKET)  &to 1            &kp LA(LG(C))                          &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
@@ -202,7 +202,7 @@
 &kp F1          &kp UP_ARROW    &kp UP_ARROW    &kp UP_ARROW    &kp F5                                             &kp LA(LG(F))  &kp F7  &kp F8  &kp F9  &kp LA(LG(A))
 &kp LEFT_ARROW  &kp LG(S)       &kp D           &kp LG(F)       &kp RIGHT_ARROW  &kp LS(LG(M))    &kp LC(SPACE)    &kp LA(LG(B))  &kp F4  &kp F5  &kp F6  &kp UNDERSCORE
 &kp LEFT_ARROW  &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp RIGHT_ARROW  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LA(LG(G))  &kp F1  &kp F2  &kp F3  &kp LA(LG(T))
-&kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp LA(LG(C))    &mo 3                                  &kp UNDERSCORE
+&kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp LA(LG(C))    &mo 3                                  &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp LA(LG(MINUS)) LA(LG(SEMICOLON))>;
