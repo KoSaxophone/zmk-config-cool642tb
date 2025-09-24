@@ -188,8 +188,8 @@
 
         symbol {
             bindings = <
-&kp EXCLAMATION       &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR    &kp PERCENT                                           &kp AMPERSAND  &kp SQT       &kp TILDE      &kp GRAVE         &kp PIPE
-&kp A                 &kp S              &kp D              &kp F         &kp G            &kp LG(LS(N5))    &kp UNDERSCORE     &kp PLUS       &kp N4        &kp N5         &kp N6            &kp ENTER
+&kp EXCLAMATION       &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR    &kp PERCENT                                           &kp AMPERSAND  &kp SQT       &kp TILDE      &kp GRAVE         &kp UNDERSCORE
+&kp A                 &kp S              &kp D              &kp F         &kp G            &kp LG(LS(N5))    &kp PIPE           &kp PLUS       &kp N4        &kp N5         &kp N6            &kp ENTER
 &kp Z                 &kp X              &kp C              &kp V         &kp B            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL      &kp NUMBER_1  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
 &kp LG(LEFT_BRACKET)  &kp LEFT_ARROW     &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp RIGHT_ARROW  &mo 2             &kp BACKSPACE      &kp N0                                                        &kp BACKSLASH
             >;
@@ -211,7 +211,7 @@
         number {
             bindings = <
 &kp N1                &kp N2          &kp N3             &kp N4        &kp N5                                            &kp N6     &kp N7  &kp N8  &kp N9  &kp N0
-&kp A                 &kp S           &kp D              &kp F         &kp G   &kp LS(LG(D))          &kp UNDERSCORE     &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ENTER
+&kp A                 &kp S           &kp D              &kp F         &kp G   &kp LS(LG(D))          &kp PIPE           &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ENTER
 &kp Z                 &kp X           &kp C              &kp V         &kp B   &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp QUESTION
 &kp LG(LEFT_BRACKET)  &kp LEFT_ARROW  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &mo 4   &kp LG(RIGHT_BRACKET)  &kp BACKSPACE      &kp N0                             &kp ASTERISK
             >;
