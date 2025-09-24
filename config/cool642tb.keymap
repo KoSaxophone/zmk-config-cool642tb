@@ -178,8 +178,8 @@
         shortcutfunction {
             bindings = <
 &kp F1                &kp F2          &kp F3             &kp F4        &kp F5                                                   &kp F6     &kp F7  &kp F8  &kp F9  &kp MINUS
-&kp LG(A)             &kp LG(LS(Z))   &kp D              &kp LG(F)     &kp G            &kp LG(LS(L))          &kp UNDERSCORE   &kp PLUS   &kp F4  &kp F5  &kp F6  &kp ENTER
-&kp LG(Z)             &kp LG(X)       &kp LG(C)          &kp LG(V)     &kp B            &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp EQUAL  &kp F1  &kp F2  &kp F3  &kp QUESTION
+&kp LG(A)             &kp LG(LS(Z))   &kp D              &kp LG(F)     &kp G            &kp LG(LS(L))          &kp UNDERSCORE   &kp EQUAL  &kp F4  &kp F5  &kp F6  &kp ENTER
+&kp LG(Z)             &kp LG(X)       &kp LG(C)          &kp LG(V)     &kp B            &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp PLUS   &kp F1  &kp F2  &kp F3  &kp QUESTION
 &kp LG(LEFT_BRACKET)  &kp LEFT_ARROW  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp RIGHT_ARROW  &kp LG(RIGHT_BRACKET)  &to 1            &kp N0                             &kp AT_SIGN
             >;
 
@@ -189,8 +189,8 @@
         symbol {
             bindings = <
 &kp EXCLAMATION       &kp DOUBLE_QUOTES  &kp HASH           &kp DOLLAR    &kp PERCENT                                           &kp AMPERSAND  &kp SQT       &kp TILDE      &kp GRAVE         &kp UNDERSCORE
-&kp A                 &kp S              &kp D              &kp F         &kp G            &kp LG(LS(N5))    &kp PIPE           &kp PLUS       &kp N4        &kp N5         &kp N6            &kp ENTER
-&kp Z                 &kp X              &kp C              &kp V         &kp B            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL      &kp NUMBER_1  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
+&kp A                 &kp S              &kp D              &kp F         &kp G            &kp LG(LS(N5))    &kp PIPE           &kp EQUAL      &kp N4        &kp N5         &kp N6            &kp ENTER
+&kp Z                 &kp X              &kp C              &kp V         &kp B            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS       &kp NUMBER_1  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
 &kp LG(LEFT_BRACKET)  &kp LEFT_ARROW     &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp RIGHT_ARROW  &mo 2             &kp BACKSPACE      &kp N0                                                        &kp BACKSLASH
             >;
 
@@ -200,8 +200,8 @@
         arrow {
             bindings = <
 &kp F1          &kp UP_ARROW    &kp UP_ARROW    &kp UP_ARROW    &kp F5                                             &kp F6     &kp F7  &kp F8  &kp F9  &kp MINUS
-&kp LEFT_ARROW  &kp LG(LS(Z))   &kp D           &kp LG(F)       &kp RIGHT_ARROW  &kp LS(LG(M))    &kp UNDERSCORE   &kp PLUS   &kp F4  &kp F5  &kp F6  &kp ENTER
-&kp LEFT_ARROW  &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp RIGHT_ARROW  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp EQUAL  &kp F1  &kp F2  &kp F3  &kp QUESTION
+&kp LEFT_ARROW  &kp LG(LS(Z))   &kp D           &kp LG(F)       &kp RIGHT_ARROW  &kp LS(LG(M))    &kp UNDERSCORE   &kp EQUAL  &kp F4  &kp F5  &kp F6  &kp ENTER
+&kp LEFT_ARROW  &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp RIGHT_ARROW  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp PLUS   &kp F1  &kp F2  &kp F3  &kp QUESTION
 &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp BACKSPACE    &mo 3                              &kp AT_SIGN
             >;
 
@@ -211,8 +211,8 @@
         number {
             bindings = <
 &kp N1                &kp N2          &kp N3             &kp N4        &kp N5                                            &kp N6     &kp N7  &kp N8  &kp N9  &kp N0
-&kp A                 &kp S           &kp D              &kp F         &kp G   &kp LS(LG(D))          &kp PIPE           &kp PLUS   &kp N4  &kp N5  &kp N6  &kp ENTER
-&kp Z                 &kp X           &kp C              &kp V         &kp B   &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp QUESTION
+&kp A                 &kp S           &kp D              &kp F         &kp G   &kp LS(LG(D))          &kp PIPE           &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp ENTER
+&kp Z                 &kp X           &kp C              &kp V         &kp B   &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp PLUS   &kp N1  &kp N2  &kp N3  &kp QUESTION
 &kp LG(LEFT_BRACKET)  &kp LEFT_ARROW  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &mo 4   &kp LG(RIGHT_BRACKET)  &kp BACKSPACE      &kp N0                             &kp ASTERISK
             >;
 
