@@ -279,10 +279,10 @@
 
         arrow {
             bindings = <
-&kp F1          &kp UP_ARROW    &kp UP_ARROW    &kp UP_ARROW    &kp F5                                             &kp F6     &kp F7  &kp F8  &kp F9  &kp MINUS
-&kp LEFT_ARROW  &kp LG(LS(Z))   &kp D           &kp LG(F)       &kp RIGHT_ARROW  &kp LS(LG(M))    &kp UNDERSCORE   &kp EQUAL  &kp F4  &kp F5  &kp F6  &kp ENTER
-&kp LEFT_ARROW  &kp LG(X)       &kp LG(C)       &kp LG(V)       &kp RIGHT_ARROW  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp PLUS   &kp F1  &kp F2  &kp F3  &kp QUESTION
-&kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp BACKSPACE    &mo 3                              &kp AT_SIGN
+&kp F1          &kp UP_ARROW        &kp UP_ARROW        &kp UP_ARROW         &kp F5                                             &kp F6     &kp F7  &kp F8  &kp F9  &kp MINUS
+&kp LEFT_ARROW  &kp LS(LEFT_ARROW)  &kp LS(UP_ARROW)    &kp LS(RIGHT_ARROW)  &kp RIGHT_ARROW  &kp LS(LG(M))    &kp UNDERSCORE   &kp EQUAL  &kp F4  &kp F5  &kp F6  &kp ENTER
+&kp LEFT_ARROW  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &kp RIGHT_ARROW  &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp PLUS   &kp F1  &kp F2  &kp F3  &kp QUESTION
+&kp DOWN_ARROW  &kp DOWN_ARROW      &kp DOWN_ARROW      &kp DOWN_ARROW       &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp BACKSPACE    &mo 3                              &kp AT_SIGN
             >;
 
             sensor-bindings = <&inc_dec_kp LA(LG(MINUS)) LA(LG(SEMICOLON))>;
