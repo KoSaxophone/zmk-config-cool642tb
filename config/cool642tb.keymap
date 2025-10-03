@@ -268,10 +268,10 @@
 
         symbol {
             bindings = <
-&kp EXCLAMATION       &kp DOUBLE_QUOTES  &kp HASH            &kp DOLLAR           &kp PERCENT                                           &kp AMPERSAND  &kp SQT       &kp TILDE      &kp GRAVE         &kp UNDERSCORE
-&kp A                 &kp S              &kp D               &kp F                &kp G            &kp LG(LS(N5))    &kp PIPE           &kp EQUAL      &kp N4        &kp N5         &kp N6            &kp ENTER
-&kp Z                 &kp X              &kp C               &kp V                &kp B            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PLUS       &kp NUMBER_1  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
-&kp LG(LEFT_BRACKET)  &kp LEFT_ARROW     &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp RIGHT_ARROW  &mo 2             &kp BACKSPACE      &kp N0                                                        &kp BACKSLASH
+&kp EXCLAMATION       &kp DOUBLE_QUOTES  &kp HASH            &kp DOLLAR           &kp PERCENT                                       &kp AMPERSAND  &kp SQT       &kp TILDE      &kp GRAVE         &kp UNDERSCORE
+&kp A                 &kp S              &kp D               &kp F                &kp G            &kp LG(LS(N5))  &kp PIPE         &kp EQUAL      &kp N4        &kp N5         &kp N6            &kp ENTER
+&kp Z                 &kp X              &kp C               &kp V                &kp B            &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PLUS       &kp NUMBER_1  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION
+&kp LG(LEFT_BRACKET)  &kp LEFT_ARROW     &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp RIGHT_ARROW  &mo 2           &kp BACKSPACE    &kp N0                                                        &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LEFT_BRACKET) LG(RIGHT_BRACKET)>;
@@ -290,10 +290,10 @@
 
         number {
             bindings = <
-&kp N1                &kp N2          &kp N3              &kp N4               &kp N5                                            &kp N6     &kp N7  &kp N8  &kp N9  &kp N0
-&kp A                 &kp S           &kp D               &kp F                &kp G   &kp LS(LG(D))          &kp PIPE           &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp ENTER
-&kp Z                 &kp X           &kp C               &kp V                &kp B   &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp PLUS   &kp N1  &kp N2  &kp N3  &kp QUESTION
-&kp LG(LEFT_BRACKET)  &kp LEFT_ARROW  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &mo 4   &kp LG(RIGHT_BRACKET)  &kp BACKSPACE      &kp N0                             &kp AT_SIGN
+&kp N1                &kp N2          &kp N3              &kp N4               &kp N5                                          &kp N6     &kp N7  &kp N8  &kp N9  &kp N0
+&kp A                 &kp S           &kp D               &kp F                &kp G   &kp LS(LG(D))          &kp PIPE         &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp ENTER
+&kp Z                 &kp X           &kp C               &kp V                &kp B   &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp PLUS   &kp N1  &kp N2  &kp N3  &kp QUESTION
+&kp LG(LEFT_BRACKET)  &kp LEFT_ARROW  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &mo 4   &kp LG(RIGHT_BRACKET)  &kp BACKSPACE    &kp N0                             &kp AT_SIGN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
