@@ -51,6 +51,16 @@
             bindings = <&kp DELETE>;
             key-positions = <7 9 8>;
         };
+
+        roman {
+            bindings = <&kp LANG2>;
+            key-positions = <39 38>;
+        };
+
+        kana {
+            bindings = <&kp LANG1>;
+            key-positions = <40 41>;
+        };
     };
 
     macros {
@@ -133,7 +143,7 @@
 &kp LEFT_SHIFT  &kp LCTRL  &kp B  &kp LEFT_ALT  &lt 4 A  &lt 2 SPACE           &lt 1 SPACE            &lt 3 A                                &kp LEFT_SHIFT
             >;
 
-            sensor-bindings = <&scroll_move_y>;
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         FUNCTION {
