@@ -84,17 +84,12 @@
 
         down1 {
             bindings = <&kp DOWN_ARROW>;
-            key-positions = <35 36>;
+            key-positions = <35 36 34>;
         };
 
         down2 {
             bindings = <&kp DOWN_ARROW>;
-            key-positions = <36 37>;
-        };
-
-        down3 {
-            bindings = <&kp DOWN_ARROW>;
-            key-positions = <30 31>;
+            key-positions = <36 37 35>;
         };
 
         down4 {
@@ -104,67 +99,37 @@
 
         left1 {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <10 22>;
+            key-positions = <10 22 0>;
         };
 
         left2 {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <16 28>;
+            key-positions = <10 22 34>;
         };
 
         left3 {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <17 29>;
+            key-positions = <17 29 5>;
         };
 
         right1 {
             bindings = <&kp RIGHT_ARROW>;
-            key-positions = <14 26>;
+            key-positions = <14 26 38>;
         };
 
         right2 {
             bindings = <&kp RIGHT_ARROW>;
-            key-positions = <21 33>;
+            key-positions = <21 33 42>;
         };
 
-        page_left1 {
-            bindings = <&kp LG(LEFT_ARROW)>;
-            key-positions = <10 22 34>;
+        left4 {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <16 40 28>;
         };
 
-        page_left2 {
-            bindings = <&kp LG(LEFT_ARROW)>;
-            key-positions = <0 10 22>;
-        };
-
-        page_right {
-            bindings = <&kp LG(RIGHT_ARROW)>;
-            key-positions = <9 21 33>;
-        };
-
-        page_all1 {
-            bindings = <&kp LG(UP_ARROW)>;
-            key-positions = <0 2 1>;
-        };
-
-        page_all2 {
-            bindings = <&kp LG(UP_ARROW)>;
-            key-positions = <1 2 3>;
-        };
-
-        page_all3 {
-            bindings = <&kp LG(UP_ARROW)>;
-            key-positions = <2 3 4>;
-        };
-
-        page_all4 {
-            bindings = <&kp LG(UP_ARROW)>;
-            key-positions = <5 6 7>;
-        };
-
-        page_all5 {
-            bindings = <&kp LG(UP_ARROW)>;
-            key-positions = <6 7 8>;
+        left5 {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <17 29 41>;
         };
     };
 
