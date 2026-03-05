@@ -219,7 +219,7 @@
             bindings = <
 &kp Q           &kp W         &kp E      &kp R         &kp T                                 &kp Y    &kp U  &kp I      &kp O       &kp P
 &kp A           &kp S         &kp D      &kp F         &kp G    &kp LS(LC(N4))  &kp MINUS    &kp H    &kp J  &kp K      &kp L       &kp ENTER
-&kp Z           &kp X         &kp C      &kp V         &kp B    &kp LC(C)       &kp LC(V)    &kp N    &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp Z           &kp X         &kp C      &kp V         &kp B    &kp LC(V)       &kp LC(C)    &kp N    &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 4 A  &lt 2 SPACE     &lt 1 SPACE  &lt 3 A                                &lt 5 UNDERSCORE
             >;
 
@@ -239,10 +239,10 @@
 
         NUM {
             bindings = <
-&kp F1        &kp F2        &kp F3             &kp F4         &kp F5                                                      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp MINUS
-&kp AT_SIGN   &kp SQT       &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &mo 1               &kp INT_KATAKANAHIRAGANA  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp SLASH
-&kp Z         &kp X         &kp C              &kp V          &kp B         &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp CARET     &kp PERCENT
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &kp RGUI       &kp LEFT_ALT  &to 2               &kp SPACE                 &kp NUMBER_0                                            &kp LEFT_SHIFT
+&kp F1        &kp F2        &kp F3             &kp F4         &kp F5                                       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp MINUS
+&kp AT_SIGN   &kp SQT       &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &mo 1               &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp SLASH
+&kp Z         &kp X         &kp C              &kp V          &kp B         &kp LA(LEFT_ARROW)  &kp LC(C)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp CARET     &kp PERCENT
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &kp RGUI       &kp LEFT_ALT  &to 2               &kp SPACE  &kp NUMBER_0                                            &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -250,10 +250,10 @@
 
         SYMBOL_LEFT {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                  &kp Y  &kp U  &kp I      &kp O       &kp P
-&kp A            &kp S              &kp D     &kp F       &kp G        &kp N1  &kp N2  &kp H  &kp J  &kp K      &kp L       &kp ENTER
-&kp Z            &kp X              &kp C     &kp V       &kp B        &kp N3  &kp N4  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT       &kp LCTRL          &kp LGUI  &kp LALT    &lt 1 SPACE  &kp N5  &kp N6  &to 3                                &kp BSPC
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                     &kp Y  &kp U  &kp I      &kp O       &kp P
+&kp A            &kp S              &kp D     &kp F       &kp G        &kp N1  &kp N2     &kp H  &kp J  &kp K      &kp L       &kp ENTER
+&kp Z            &kp X              &kp C     &kp V       &kp B        &kp N3  &kp LC(C)  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp RSHIFT       &kp LCTRL          &kp LGUI  &kp LALT    &lt 1 SPACE  &kp N5  &kp N6     &to 3                                &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LEFT_ARROW) LC(RIGHT_ARROW)>;
