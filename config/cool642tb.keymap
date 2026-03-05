@@ -234,7 +234,7 @@
 &none            &none        &none         &none       &none        &none             &to 1              &kp DEL                                                                   &kp LEFT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(LEFT_ARROW) LC(RIGHT)>;
+            sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT))>;
         };
 
         NUM {
@@ -256,7 +256,7 @@
 &kp RSHIFT       &kp LCTRL          &kp LGUI  &kp LALT    &lt 1 SPACE  &kp N5  &kp N6  &to 3                                &kp BSPC
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LS(LC(RIGHT_ARROW))>;
+            sensor-bindings = <&inc_dec_kp LC(LEFT_ARROW) LC(RIGHT_ARROW)>;
         };
 
         SYMBOL {
