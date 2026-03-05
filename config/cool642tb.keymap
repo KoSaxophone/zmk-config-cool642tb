@@ -141,6 +141,31 @@
             bindings = <&kp LG(RIGHT_ARROW)>;
             key-positions = <9 21 33>;
         };
+
+        page_all1 {
+            bindings = <&kp LG(UP_ARROW)>;
+            key-positions = <0 2 1>;
+        };
+
+        page_all2 {
+            bindings = <&kp LG(UP_ARROW)>;
+            key-positions = <1 2 3>;
+        };
+
+        page_all3 {
+            bindings = <&kp LG(UP_ARROW)>;
+            key-positions = <2 3 4>;
+        };
+
+        page_all4 {
+            bindings = <&kp LG(UP_ARROW)>;
+            key-positions = <5 6 7>;
+        };
+
+        page_all5 {
+            bindings = <&kp LG(UP_ARROW)>;
+            key-positions = <6 7 8>;
+        };
     };
 
     macros {
