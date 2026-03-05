@@ -53,13 +53,93 @@
         };
 
         roman {
-            bindings = <&kp LANG2>;
+            bindings = <&kp INT2>;
             key-positions = <39 38>;
         };
 
         kana {
-            bindings = <&kp LANG1>;
+            bindings = <&kp INT1>;
             key-positions = <40 41>;
+        };
+
+        up1 {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <1 2>;
+        };
+
+        up2 {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <2 3>;
+        };
+
+        up3 {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <6 7>;
+        };
+
+        up4 {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <7 8>;
+        };
+
+        down1 {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <35 36>;
+        };
+
+        down2 {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <36 37>;
+        };
+
+        down3 {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <30 31>;
+        };
+
+        down4 {
+            bindings = <&kp DOWN>;
+            key-positions = <32 31>;
+        };
+
+        left1 {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <10 22>;
+        };
+
+        left2 {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <16 28>;
+        };
+
+        left3 {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <17 29>;
+        };
+
+        right1 {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <14 26>;
+        };
+
+        right2 {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <21 33>;
+        };
+
+        page_left1 {
+            bindings = <&kp LG(LEFT_ARROW)>;
+            key-positions = <10 22 34>;
+        };
+
+        page_left2 {
+            bindings = <&kp LG(LEFT_ARROW)>;
+            key-positions = <0 10 22>;
+        };
+
+        page_right {
+            bindings = <&kp LG(RIGHT_ARROW)>;
+            key-positions = <9 21 33>;
         };
     };
 
