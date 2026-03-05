@@ -272,10 +272,10 @@
 
         FN {
             bindings = <
-&kp F1      &kp F2     &kp F3    &kp F4    &kp F5                         &kp F6       &kp F7   &kp F8     &kp F9      &kp F10
-&kp F11     &kp F12    &kp F13   &kp F14   &kp F15      &kp F15  &kp F16  &kp F16      &kp F17  &kp F18    &kp F19     &kp F20
-&kp F21     &kp F22    &kp F23   &kp F24   &kp B        &kp N3   &kp N4   &kp N        &kp M    &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5   &kp N6   &lt 2 SPACE                                  &to 5
+&kp F1      &kp F2     &kp F3    &kp F4    &kp F5                                &kp F6       &kp F7   &kp F8     &kp F9      &kp F10
+&kp F11     &kp F12    &kp F13   &kp F14   &kp F15      &kp LG(PERIOD)  &kp F16  &kp F16      &kp F17  &kp F18    &kp F19     &kp F20
+&kp F21     &kp F22    &kp F23   &kp F24   &kp B        &kp N3          &kp N4   &kp N        &kp M    &kp COMMA  &kp PERIOD  &kp SLASH
+&kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5          &kp N6   &lt 2 SPACE                                  &to 5
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
