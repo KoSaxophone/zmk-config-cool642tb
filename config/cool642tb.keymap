@@ -252,10 +252,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E      &kp R         &kp T                                                   &kp Y    &kp U  &mt LS(MINUS) I      &mt LS(EQUAL) O     &mt MINUS P
-&kp A           &kp S         &kp D      &kp F         &kp G    &kp LS(LC(N4))  &mt LS(INTERNATIONAL_1) MINUS  &kp H    &kp J  &mt SEMI K           &mt SQT L           &mt AT ENTER
-&kp Z           &kp X         &kp C      &kp V         &kp B    &kp LC(V)       &kp LC(C)                      &kp N    &kp M  &mt LS(COMMA) COMMA  &mt LS(PERIOD) DOT  &mt LBKT BACKSLASH
-&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 4 A  &lt 2 SPACE     &lt 1 SPACE                    &lt 3 A                                                  &lt 5 SLASH
+&kp Q           &kp W         &kp E      &kp R         &kp T                                                   &kp Y            &kp U        &mt LS(MINUS) I      &mt LS(EQUAL) O     &mt MINUS P
+&kp A           &kp S         &kp D      &kp F         &kp G    &kp LS(LC(N4))  &mt LS(INTERNATIONAL_1) MINUS  &kp H            &kp J        &mt SEMI K           &mt SQT L           &mt AT ENTER
+&kp Z           &kp X         &kp C      &kp V         &kp B    &kp LC(V)       &kp LC(C)                      &mt BACKSLASH N  &mt SLASH M  &mt LS(COMMA) COMMA  &mt LS(PERIOD) DOT  &mt LBKT BACKSLASH
+&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 4 A  &lt 2 SPACE     &lt 1 SPACE                    &lt 3 A                                                                &lt 5 SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
