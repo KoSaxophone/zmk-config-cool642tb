@@ -274,10 +274,10 @@
 
         NUMBER {
             bindings = <
-&kp F1        &kp F2        &kp F3             &kp F4         &kp F5                              &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SEMICOLON)  &kp MINUS
-&kp AT_SIGN   &kp SQT       &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &kp LG(L)  &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(ASTRK)      &kp SLASH
-&kp Z         &kp X         &kp C              &kp V          &kp B         &kp LC(V)  &kp LC(C)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp CARET          &kp LS(NUMBER_5)
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &kp RGUI       &kp LEFT_ALT  &to 2      &kp SPACE  &kp NUMBER_0                                                 &kp BACKSLASH
+&kp F1        &kp F2        &kp F3             &kp F4         &kp F5                                      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SEMICOLON)  &kp MINUS
+&kp AT_SIGN   &kp SQT       &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &kp LG(L)  &kp LS(BACKSLASH)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(ASTRK)      &kp SLASH
+&kp Z         &kp X         &kp C              &kp V          &kp B         &kp LC(V)  &kp LC(C)          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp CARET          &kp LS(NUMBER_5)
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &kp RGUI       &kp LEFT_ALT  &to 2      &kp SPACE          &kp NUMBER_0                                                 &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -285,10 +285,10 @@
 
         SYMBOL_LEFT {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR  &kp PERCENT                     &kp Y  &kp U  &kp I      &kp O       &kp P
-&kp A            &kp S              &kp D      &kp F       &kp G        &kp N1  &kp N2     &kp H  &kp J  &kp K      &kp L       &kp ENTER
-&kp Z            &kp X              &kp C      &kp V       &kp B        &kp N3  &kp LC(C)  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT       &kp LEFT_GUI       &kp LCTRL  &kp LALT    &lt 1 SPACE  &kp N5  &kp N6     &to 3                                &kp BSPC
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                     &kp Y  &kp U  &kp I      &kp O       &kp P
+&kp A             &kp S             &kp D             &kp F             &kp G             &kp N1  &kp N2     &kp H  &kp J  &kp K      &kp L       &kp ENTER
+&kp Z             &kp X             &kp C             &kp V             &kp B             &kp N3  &kp LC(C)  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp RSHIFT        &kp LEFT_GUI      &kp LCTRL         &kp LALT          &lt 1 SPACE       &kp N5  &kp N6     &to 3                                &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LEFT_ARROW) LC(RIGHT_ARROW)>;
@@ -296,10 +296,10 @@
 
         SYMBOL_RIGHT {
             bindings = <
-&kp Q           &kp W             &kp E             &kp R             &kp T                                   &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LPAR       &kp RPAR     &kp TILDE
-&kp A           &kp S             &kp D             &kp F             &kp G  &kp LC(LS(ESCAPE))  &kp N2       &kp H          &kp J             &kp PIPE       &kp AT_SIGN  &kp LEFT_BRACKET
-&kp Z           &kp X             &kp C             &kp V             &kp B  &kp N3              &kp N4       &kp N          &kp SLASH         &kp SEMICOLON  &kp COLON    &kp RIGHT_BRACKET
-&kp LEFT_SHIFT  &kp LS(LEFT_GUI)  &kp LEFT_CONTROL  &kp LS(LEFT_ALT)  &to 4  &mkp MB2            &lt 2 SPACE  &kp BACKSPACE                                                &kp BSLH
+&kp Q           &kp W             &kp E             &kp R             &kp T                                   &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(LCTRL)
+&kp A           &kp S             &kp D             &kp F             &kp G  &kp LC(LS(ESCAPE))  &kp N2       &kp H             &kp J             &kp PIPE          &kp AT_SIGN       &kp LEFT_BRACKET
+&kp Z           &kp X             &kp C             &kp V             &kp B  &kp N3              &kp N4       &kp N             &kp SLASH         &kp SEMICOLON     &kp COLON         &kp RIGHT_BRACKET
+&kp LEFT_SHIFT  &kp LS(LEFT_GUI)  &kp LEFT_CONTROL  &kp LS(LEFT_ALT)  &to 4  &mkp MB2            &lt 2 SPACE  &kp BACKSPACE                                                           &kp BSLH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
