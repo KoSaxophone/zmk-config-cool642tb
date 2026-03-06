@@ -54,12 +54,12 @@
 
         roman {
             bindings = <&kp LANGUAGE_2>;
-            key-positions = <39 38>;
+            key-positions = <27 26>;
         };
 
-        kana {
+        kana1 {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <40 41>;
+            key-positions = <29 30>;
         };
 
         up1 {
@@ -170,6 +170,11 @@
         down8 {
             bindings = <&kp DOWN_ARROW>;
             key-positions = <32 31 33>;
+        };
+
+        kana2 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <29 28>;
         };
     };
 
