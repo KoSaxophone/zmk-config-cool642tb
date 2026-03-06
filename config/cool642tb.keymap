@@ -252,10 +252,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E      &kp R         &kp T                                          &kp Y    &kp U  &kp I      &kp O       &mt MINUS P
-&kp A           &kp S         &kp D      &kp F         &kp G    &kp LS(LC(N4))  &mt UNDERSCORE MINUS  &kp H    &kp J  &kp K      &kp L       &kp ENTER
-&kp Z           &kp X         &kp C      &kp V         &kp B    &kp LC(V)       &kp LC(C)             &kp N    &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 4 A  &lt 2 SPACE     &lt 1 SPACE           &lt 3 A                                &lt 5 BACKSLASH
+&kp Q           &kp W         &kp E      &kp R         &kp T                                     &kp Y    &kp U  &kp I      &kp O       &mt MINUS P
+&kp A           &kp S         &kp D      &kp F         &kp G    &kp LS(LC(N4))  &mt UNDER MINUS  &kp H    &kp J  &kp K      &kp L       &kp ENTER
+&kp Z           &kp X         &kp C      &kp V         &kp B    &kp LC(V)       &kp LC(C)        &kp N    &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 4 A  &lt 2 SPACE     &lt 1 SPACE      &lt 3 A                                &lt 5 UNDER
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -296,10 +296,10 @@
 
         SYMBOL_RIGHT {
             bindings = <
-&kp Q           &kp W             &kp E             &kp R             &kp T                                   &kp AMPERSAND  &kp SINGLE_QUOTE  &kp A          &kp A        &kp TILDE
+&kp Q           &kp W             &kp E             &kp R             &kp T                                   &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LPAR       &kp RPAR     &kp TILDE
 &kp A           &kp S             &kp D             &kp F             &kp G  &kp LC(LS(ESCAPE))  &kp N2       &kp H          &kp J             &kp PIPE       &kp AT_SIGN  &kp LEFT_BRACKET
-&kp Z           &kp X             &kp C             &kp V             &kp B  &kp N3              &kp N4       &kp N          &kp M             &kp SEMICOLON  &kp COLON    &kp RIGHT_BRACKET
-&kp LEFT_SHIFT  &kp LS(LEFT_GUI)  &kp LEFT_CONTROL  &kp LS(LEFT_ALT)  &to 4  &mkp MB2            &lt 2 SPACE  &kp BACKSPACE                                                &kp LEFT_SHIFT
+&kp Z           &kp X             &kp C             &kp V             &kp B  &kp N3              &kp N4       &kp N          &kp SLASH         &kp SEMICOLON  &kp COLON    &kp RIGHT_BRACKET
+&kp LEFT_SHIFT  &kp LS(LEFT_GUI)  &kp LEFT_CONTROL  &kp LS(LEFT_ALT)  &to 4  &mkp MB2            &lt 2 SPACE  &kp BACKSPACE                                                &kp BSLH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
