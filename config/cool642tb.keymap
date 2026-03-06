@@ -274,10 +274,10 @@
 
         NUMBER {
             bindings = <
-&kp F1        &kp F2        &kp F3             &kp F4         &kp F5                                      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SEMICOLON)  &kp MINUS
-&kp AT_SIGN   &kp SQT       &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &kp LG(L)  &kp LS(BACKSLASH)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RS(COLON)      &kp SLASH
-&kp Z         &kp X         &kp C              &kp V          &kp B         &kp LC(V)  &kp LC(C)          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp CARET          &kp LS(NUMBER_5)
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &kp RGUI       &kp LEFT_ALT  &to 2      &kp SPACE          &kp NUMBER_0                                                 &kp NON_US_BACKSLASH
+&kp F1        &kp F2        &kp F3             &kp F4         &kp F5                                      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(EQUAL)  &kp MINUS
+&kp AT_SIGN   &kp SQT       &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &kp LG(L)  &kp LS(BACKSLASH)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(N8)     &kp SLASH
+&kp Z         &kp X         &kp C              &kp V          &kp B         &kp LC(V)  &kp LC(C)          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp CARET      &kp LS(NUMBER_5)
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &kp RGUI       &kp LEFT_ALT  &to 2      &kp SPACE          &kp NUMBER_0                                             &kp NON_US_BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
