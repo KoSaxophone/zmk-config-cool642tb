@@ -296,10 +296,10 @@
 
         SYMBOL_RIGHT {
             bindings = <
-&kp Q           &kp W             &kp E             &kp R             &kp T                                   &kp AMPERSAND  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-&kp A           &kp S             &kp D             &kp F             &kp G  &kp LC(LS(ESCAPE))  &kp N2       &kp H          &kp J             &kp PIPE              &kp AT_SIGN            &kp LEFT_BRACKET
-&kp Z           &kp X             &kp C             &kp V             &kp B  &kp N3              &kp N4       &kp N          &kp M             &kp SEMICOLON         &kp COLON              &kp RIGHT_BRACKET
-&kp LEFT_SHIFT  &kp LS(LEFT_GUI)  &kp LEFT_CONTROL  &kp LS(LEFT_ALT)  &to 4  &mkp MB2            &lt 2 SPACE  &kp BACKSPACE                                                                 &kp LEFT_SHIFT
+&kp Q           &kp W             &kp E             &kp R             &kp T                                   &kp AMPERSAND  &kp SINGLE_QUOTE  &kp A          &kp A        &kp TILDE
+&kp A           &kp S             &kp D             &kp F             &kp G  &kp LC(LS(ESCAPE))  &kp N2       &kp H          &kp J             &kp PIPE       &kp AT_SIGN  &kp LEFT_BRACKET
+&kp Z           &kp X             &kp C             &kp V             &kp B  &kp N3              &kp N4       &kp N          &kp M             &kp SEMICOLON  &kp COLON    &kp RIGHT_BRACKET
+&kp LEFT_SHIFT  &kp LS(LEFT_GUI)  &kp LEFT_CONTROL  &kp LS(LEFT_ALT)  &to 4  &mkp MB2            &lt 2 SPACE  &kp BACKSPACE                                                &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
