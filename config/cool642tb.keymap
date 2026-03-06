@@ -53,53 +53,63 @@
         };
 
         roman {
-            bindings = <&kp INT2>;
+            bindings = <&kp LANGUAGE_2>;
             key-positions = <39 38>;
         };
 
         kana {
-            bindings = <&kp INT1>;
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <40 41>;
         };
 
         up1 {
             bindings = <&kp UP_ARROW>;
-            key-positions = <1 2>;
+            key-positions = <0 1 2>;
         };
 
         up2 {
             bindings = <&kp UP_ARROW>;
-            key-positions = <2 3>;
+            key-positions = <1 2 3>;
         };
 
         up3 {
             bindings = <&kp UP_ARROW>;
-            key-positions = <6 7>;
+            key-positions = <4 3 2>;
         };
 
         up4 {
             bindings = <&kp UP_ARROW>;
-            key-positions = <7 8>;
+            key-positions = <5 6 7>;
         };
 
-        down1 {
-            bindings = <&kp DOWN_ARROW>;
-            key-positions = <35 36 34>;
+        up5 {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <6 7 8>;
         };
 
-        down2 {
-            bindings = <&kp DOWN_ARROW>;
-            key-positions = <36 37 35>;
+        right1 {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <9 21 33>;
         };
 
-        down4 {
-            bindings = <&kp DOWN>;
-            key-positions = <32 31>;
+        right2 {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <21 33 42>;
+        };
+
+        right3 {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <4 14 26>;
+        };
+
+        right4 {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <14 26 38>;
         };
 
         left1 {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <10 22 0>;
+            key-positions = <0 10 22>;
         };
 
         left2 {
@@ -109,27 +119,57 @@
 
         left3 {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <17 29 5>;
-        };
-
-        right1 {
-            bindings = <&kp RIGHT_ARROW>;
-            key-positions = <14 26 38>;
-        };
-
-        right2 {
-            bindings = <&kp RIGHT_ARROW>;
-            key-positions = <21 33 42>;
+            key-positions = <16 28 40>;
         };
 
         left4 {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <16 40 28>;
+            key-positions = <5 17 29>;
         };
 
         left5 {
             bindings = <&kp LEFT_ARROW>;
             key-positions = <17 29 41>;
+        };
+
+        down1 {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <34 35 36>;
+        };
+
+        down2 {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <35 36 37>;
+        };
+
+        down3 {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <36 37 38>;
+        };
+
+        down4 {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <37 38 39>;
+        };
+
+        down5 {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <28 29 30>;
+        };
+
+        down6 {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <29 30 31>;
+        };
+
+        down7 {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <30 32 31>;
+        };
+
+        down8 {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <32 31 33>;
         };
     };
 
