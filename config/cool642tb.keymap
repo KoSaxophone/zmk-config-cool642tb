@@ -285,10 +285,10 @@
 
         SYMBOL_LEFT {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR  &kp PERCENT                     &kp Y  &kp U  &kp I      &kp O       &kp P
-&kp A            &kp S              &kp D     &kp F       &kp G        &kp N1  &kp N2     &kp H  &kp J  &kp K      &kp L       &kp ENTER
-&kp Z            &kp X              &kp C     &kp V       &kp B        &kp N3  &kp LC(C)  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp RSHIFT       &kp LCTRL          &kp LGUI  &kp LALT    &lt 1 SPACE  &kp N5  &kp N6     &to 3                                &kp BSPC
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH   &kp DOLLAR  &kp PERCENT                     &kp Y  &kp U  &kp I      &kp O       &kp P
+&kp A            &kp S              &kp D      &kp F       &kp G        &kp N1  &kp N2     &kp H  &kp J  &kp K      &kp L       &kp ENTER
+&kp Z            &kp X              &kp C      &kp V       &kp B        &kp N3  &kp LC(C)  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp RSHIFT       &kp LEFT_GUI       &kp LCTRL  &kp LALT    &lt 1 SPACE  &kp N5  &kp N6     &to 3                                &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LEFT_ARROW) LC(RIGHT_ARROW)>;
