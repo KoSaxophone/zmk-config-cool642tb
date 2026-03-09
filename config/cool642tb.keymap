@@ -275,7 +275,7 @@
         NUMBER {
             bindings = <
 &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP                                               &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SEMI)  &kp MINUS
-&mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp A            &kp LS(INTERNATIONAL_1)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(SQT)   &kp SLASH
+&mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp LG(L)        &kp LS(INTERNATIONAL_1)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(SQT)   &kp SLASH
 &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_RIGHT  &kp LC(HOME)             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &kp LS(NUMBER_5)
 &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &to 2            &kp LC(END)              &kp N0                                                  &kp INTERNATIONAL_3
             >;
