@@ -266,7 +266,7 @@
 &kp LA(TAB)         &kp LG(PAUSE_BREAK)     &kp E          &kp LC(R)    &kp LS(LC(ESCAPE))                                            &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP     &mmv MOVE_RIGHT
 &kp LG(A)           &kp LG(S)               &kp LG(LC(D))  &kp LG(TAB)  &kp LG(P)                &to 0                &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &mmv MOVE_RIGHT
 &kp LA(LC(DELETE))  &kp LG(X)               &kp LG(K)      &kp V        &kp B                    &kp LA(LEFT_ARROW)   &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
-&kp LA(LEFT_ARROW)  &kp LG(LC(LEFT_ARROW))  &kp LC(HOME)   &kp LC(END)  &kp LG(LC(RIGHT_ARROW))  &kp LA(RIGHT_ARROW)  &to 1           &to 3                                                            &bt BT_NXT
+&kp LA(LEFT_ARROW)  &kp LG(LC(LEFT_ARROW))  &kp LC(HOME)   &kp LC(END)  &kp LG(LC(RIGHT_ARROW))  &kp LA(RIGHT_ARROW)  &to 1           &mmv MOVE_LEFT                                                   &bt BT_NXT
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT))>;
