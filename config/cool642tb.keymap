@@ -263,10 +263,10 @@
 
         right_mouse_movement {
             bindings = <
-&kp Q           &kp W                   &kp E          &kp R         &kp T                                                        &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP     &mmv MOVE_RIGHT
-&kp LG(A)       &kp LG(S)               &kp LG(LC(D))  &kp F         &kp G                    &to 0               &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &mmv MOVE_RIGHT
-&kp Z           &kp LG(X)               &kp LG(K)      &kp V         &kp B                    &kp LA(LEFT_ARROW)  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
-&kp LEFT_SHIFT  &kp LG(LC(LEFT_ARROW))  &kp LCTRL      &kp LEFT_ALT  &kp LG(LC(RIGHT_ARROW))  &to 2               &to 1           &to 3                                                            &bt BT_NXT
+&kp Q               &kp W                   &kp E          &kp R         &kp T                                                         &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP     &mmv MOVE_RIGHT
+&kp LG(A)           &kp LG(S)               &kp LG(LC(D))  &kp F         &kp G                    &to 0                &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &mmv MOVE_RIGHT
+&kp Z               &kp LG(X)               &kp LG(K)      &kp V         &kp B                    &kp LA(LEFT_ARROW)   &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
+&kp LA(LEFT_ARROW)  &kp LG(LC(LEFT_ARROW))  &kp LCTRL      &kp LEFT_ALT  &kp LG(LC(RIGHT_ARROW))  &kp LA(RIGHT_ARROW)  &to 1           &to 3                                                            &bt BT_NXT
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT))>;
