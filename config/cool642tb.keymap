@@ -263,7 +263,7 @@
 
         right_mouse_movement {
             bindings = <
-&kp N1                    &kp N2        &kp LG(E)  &kp N4       &kp N5                                           &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP     &mmv MOVE_RIGHT
+&kp Q                     &kp W         &kp LG(E)  &kp N4       &kp N5                                           &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP     &mmv MOVE_RIGHT
 &kp LC(A)                 &kp LC(S)     &kp LG(D)  &kp LC(F)    &kp PERCENT  &to 0               &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &mmv MOVE_RIGHT
 &kp LC(Z)                 &kp LC(X)     &kp LC(C)  &kp LC(V)    &kp LC(B)    &kp LA(LEFT_ARROW)  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
 &mt LEFT_SHIFT LS(LC(Z))  &kp LEFT_GUI  &kp LCTRL  &kp LA(TAB)  &to 4        &to 2               &to 1           &to 3                                                            &bt BT_NXT
@@ -274,10 +274,10 @@
 
         NUMBER {
             bindings = <
-&kp Q           &kp W         &kp E      &kp R         &kp T                                        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SEMI)  &kp MINUS
-&kp A           &kp S         &kp D      &kp F         &kp G  &kp LG(L)    &kp LS(INTERNATIONAL_1)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(SQT)   &kp SLASH
-&kp Z           &kp X         &kp C      &kp V         &kp B  &kp LC(END)  &kp LC(HOME)             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &kp LS(NUMBER_5)
-&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &to 4  &to 2        &to 1                    &kp N0                                                  &kp INTERNATIONAL_3
+&mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP                                               &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(SEMI)  &kp MINUS
+&mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp A            &kp LS(INTERNATIONAL_1)  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(SQT)   &kp SLASH
+&mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_RIGHT  &kp LC(HOME)             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL     &kp LS(NUMBER_5)
+&mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &to 2            &kp LC(END)              &kp N0                                                  &kp INTERNATIONAL_3
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
