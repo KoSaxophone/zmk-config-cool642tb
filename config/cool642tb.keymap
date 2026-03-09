@@ -252,10 +252,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &mt LG(E) E  &kp R         &kp T                                                       &mt LC(Y) Y  &kp U                &mt LS(MINUS) I      &mt LS(EQUAL) O     &mt MINUS P
-&mt LC(A) A     &mt LC(S) S   &mt LG(D) D  &mt LC(F) F   &kp G        &kp LS(LC(N4))  &mt LS(INTERNATIONAL_1) MINUS  &mt LC(H) H  &kp J                &mt SEMI K           &mt SQT L           &mt SLASH ENTER
-&mt LC(Z) Z     &mt LC(X) X   &mt LC(C) C  &mt LC(V) V   &mt LC(B) B  &kp LC(V)       &kp LC(C)                      &mt AT N     &mt RIGHT_BRACKET M  &mt LS(COMMA) COMMA  &mt LS(PERIOD) DOT  &mt BSLH LS(N5)
-&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL    &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE     &lt 1 SPACE                    &lt 3 LANG1                                                                &lt 5 INTERNATIONAL_3
+&kp Q           &kp W         &mt LG(E) E  &kp R         &kp T                                                       &mt LC(Y) Y  &kp U       &mt LS(MINUS) I      &mt LS(EQUAL) O     &mt MINUS P
+&mt LC(A) A     &mt LC(S) S   &mt LG(D) D  &mt LC(F) F   &kp G        &kp LS(LC(N4))  &mt LS(INTERNATIONAL_1) MINUS  &mt LC(H) H  &kp J       &mt SEMI K           &mt SQT L           &mt SLASH ENTER
+&mt LC(Z) Z     &mt LC(X) X   &mt LC(C) C  &mt LC(V) V   &mt LC(B) B  &kp LC(V)       &kp LC(C)                      &mt AT N     &mt LBKT M  &mt LS(COMMA) COMMA  &mt LS(PERIOD) DOT  &mt BSLH LS(N5)
+&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL    &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE     &lt 1 SPACE                    &lt 3 LANG1                                                       &lt 5 INTERNATIONAL_3
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -287,7 +287,7 @@
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                           &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
 &kp LBKT          &kp S             &kp D             &kp F             &kp G             &kp N1              &kp N2               &kp F10           &kp F9            &kp F7            &kp L             &kp ENTER
-&kp Z             &kp X             &kp C             &kp V             &kp B             &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp N             &kp M             &kp COMMA         &kp PERIOD        &kp SLASH
+&kp Z             &kp X             &kp C             &kp V             &kp B             &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)        &kp LS(LBKT)      &kp COMMA         &kp PERIOD        &kp SLASH
 &kp RSHIFT        &kp LEFT_GUI      &kp LCTRL         &kp LALT          &to 4             &to 2               &to 1                &to 3                                                                   &bt BT_NXT
             >;
 
@@ -298,7 +298,7 @@
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                               &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
 &kp A             &kp S             &kp D             &kp F             &kp G             &kp LC(LS(ESCAPE))  &kp LS(INTERNATIONAL_1)  &kp F10           &kp F9            &kp F7            &kp LEFT_BRACKET  &kp AT
-&kp Z             &kp X             &kp C             &kp V             &kp B             &kp LC(END)         &kp LC(HOME)             &kp BACKSLASH     &kp SLASH         &kp SEMICOLON     &kp SINGLE_QUOTE  &kp LEFT_BRACKET
+&kp Z             &kp X             &kp C             &kp V             &kp B             &kp LC(END)         &kp LC(HOME)             &kp RS(AT)        &kp LS(LBKT)      &kp SEMICOLON     &kp SINGLE_QUOTE  &kp LEFT_BRACKET
 &kp LEFT_SHIFT    &kp LEFT_GUI      &kp LEFT_CONTROL  &kp LEFT_ALT      &to 4             &to 2               &to 1                    &to 3                                                                   &kp INTERNATIONAL_3
             >;
 
