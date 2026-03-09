@@ -286,7 +286,7 @@
         SYMBOL_LEFT {
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                           &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
-&kp A             &kp S             &kp D             &kp F             &kp G             &kp N1              &kp N2               &kp H             &kp J             &kp K             &kp L             &kp ENTER
+&kp LBKT          &kp S             &kp D             &kp F             &kp G             &kp N1              &kp N2               &kp H             &kp J             &kp K             &kp L             &kp ENTER
 &kp Z             &kp X             &kp C             &kp V             &kp B             &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp N             &kp M             &kp COMMA         &kp PERIOD        &kp SLASH
 &kp RSHIFT        &kp LEFT_GUI      &kp LCTRL         &kp LALT          &to 4             &to 2               &to 1                &to 3                                                                   &bt BT_NXT
             >;
