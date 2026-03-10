@@ -265,7 +265,7 @@
             bindings = <
 &kp Q                   &kp LG(PAUSE_BREAK)     &kp E          &kp LC(R)    &kp T                                                        &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP     &mmv MOVE_RIGHT
 &kp LG(A)               &kp LG(S)               &kp LG(LC(D))  &kp LG(TAB)  &kp LG(P)                &kp LA(TAB)         &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &mmv MOVE_RIGHT
-&kp LA(LC(DELETE))      &kp LG(X)               &kp LG(K)      &kp LC(V)    &kp B                    &kp LA(LEFT_ARROW)  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
+&kp LA(LC(DELETE))      &kp LG(X)               &kp LG(K)      &kp LC(V)    &kp LC(B)                &kp LA(LEFT_ARROW)  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
 &kp LC(LS(LEFT_ARROW))  &kp LG(LC(LEFT_ARROW))  &kp LC(HOME)   &kp LC(END)  &kp LG(LC(RIGHT_ARROW))  &kp LC(TAB)         &to 1           &mmv MOVE_LEFT                                                   &bt BT_NXT
             >;
 
@@ -285,10 +285,10 @@
 
         SYMBOL_LEFT {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                           &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
-&kp A             &kp S             &kp D             &kp F             &kp G             &kp LG(V)           &kp N2               &kp F10           &kp F9            &kp F7            &kp L             &kp ENTER
-&kp Z             &kp X             &kp C             &kp V             &kp B             &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)        &kp LS(LBKT)      &kp COMMA         &kp PERIOD        &kp SLASH
-&kp RSHIFT        &kp LEFT_GUI      &kp LCTRL         &kp LALT          &to 4             &to 2               &to 1                &to 3                                                                   &bt BT_NXT
+&kp LS(NUMBER_1)        &kp LS(NUMBER_2)        &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                                  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
+&kp LBKT                &kp LG(S)               &kp LC(LG(D))     &kp LG(TAB)       &kp LG(P)                &kp LG(V)           &kp N2               &kp H             &kp J             &kp K             &kp L             &kp ENTER
+&kp LA(LC(DELETE))      &kp LG(X)               &kp LG(K)         &kp LC(V)         &kp LC(B)                &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)        &kp LS(LBKT)      &kp COMMA         &kp PERIOD        &kp SLASH
+&kp LS(LC(LEFT_ARROW))  &kp LC(LG(LEFT_ARROW))  &kp LC(HOME)      &kp LC(END)       &kp LC(LG(RIGHT_ARROW))  &kp LC(TAB)         &to 1                &to 3                                                                   &bt BT_NXT
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LEFT_ARROW) LC(RIGHT_ARROW)>;
