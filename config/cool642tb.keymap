@@ -252,10 +252,10 @@
 
         default_layer {
             bindings = <
-&kp Q                     &kp W         &mt LG(E) E  &mt LG(R) R   &kp T                                                       &mt LC(Y) Y  &kp U       &mt LS(MINUS) I      &mt LS(EQUAL) O     &mt MINUS P
-&mt LC(A) A               &mt LC(S) S   &mt LG(D) D  &mt LC(F) F   &kp G        &kp LS(LC(N4))  &mt LS(INTERNATIONAL_1) MINUS  &mt LC(H) H  &kp J       &mt SEMI K           &mt SQT L           &mt SLASH ENTER
-&mt LC(Z) Z               &mt LC(X) X   &mt LC(C) C  &mt LC(V) V   &mt LC(B) B  &kp LC(V)       &kp LC(C)                      &mt AT N     &mt LBKT M  &mt LS(COMMA) COMMA  &mt LS(PERIOD) DOT  &mt BSLH LS(N5)
-&mt LS(LC(Z)) LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL    &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE     &lt 1 SPACE                    &lt 3 LANG1                                                       &lt 5 INTERNATIONAL_3
+&kp Q                     &kp W         &mt LG(E) E  &mt LG(R) R   &kp T                                                           &mt LC(Y) Y  &kp U       &mt LS(MINUS) I      &mt LS(EQUAL) O     &mt MINUS P
+&mt LC(A) A               &mt LC(S) S   &mt LG(D) D  &mt LC(F) F   &kp G        &kp LS(LC(N4))      &mt LS(INTERNATIONAL_1) MINUS  &mt LC(H) H  &kp J       &mt SEMI K           &mt SQT L           &mt SLASH ENTER
+&mt LC(Z) Z               &mt LC(X) X   &mt LC(C) C  &mt LC(V) V   &mt LC(B) B  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)            &mt AT N     &mt LBKT M  &mt LS(COMMA) COMMA  &mt LS(PERIOD) DOT  &mt BSLH LS(N5)
+&mt LS(LC(Z)) LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL    &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE         &lt 1 SPACE                    &lt 3 LANG1                                                       &lt 5 INTERNATIONAL_3
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
@@ -263,10 +263,10 @@
 
         shortcut {
             bindings = <
-&kp LA(TAB)         &kp LG(PAUSE_BREAK)     &kp E          &kp LC(R)    &kp LS(LC(ESCAPE))                                            &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP     &mmv MOVE_RIGHT
-&kp LG(A)           &kp LG(S)               &kp LG(LC(D))  &kp LG(TAB)  &kp LG(P)                &to 0                &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &mmv MOVE_RIGHT
-&kp LA(LC(DELETE))  &kp LG(X)               &kp LG(K)      &kp V        &kp B                    &kp LA(LEFT_ARROW)   &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
-&kp LA(LEFT_ARROW)  &kp LG(LC(LEFT_ARROW))  &kp LC(HOME)   &kp LC(END)  &kp LG(LC(RIGHT_ARROW))  &kp LA(RIGHT_ARROW)  &to 1           &mmv MOVE_LEFT                                                   &bt BT_NXT
+&kp LA(TAB)             &kp LG(PAUSE_BREAK)     &kp E          &kp LC(R)    &kp T                                                        &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP     &mmv MOVE_RIGHT
+&kp LG(A)               &kp LG(S)               &kp LG(LC(D))  &kp LG(TAB)  &kp LG(P)                &to 0               &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &mmv MOVE_RIGHT
+&kp LA(LC(DELETE))      &kp LG(X)               &kp LG(K)      &kp LC(V)    &kp B                    &kp LA(LEFT_ARROW)  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
+&kp LC(LS(LEFT_ARROW))  &kp LG(LC(LEFT_ARROW))  &kp LC(HOME)   &kp LC(END)  &kp LG(LC(RIGHT_ARROW))  &kp LC(TAB)         &to 1           &mmv MOVE_LEFT                                                   &bt BT_NXT
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT))>;
@@ -286,7 +286,7 @@
         SYMBOL_LEFT {
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                           &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
-&kp LBKT          &kp S             &kp D             &kp F             &kp G             &kp N1              &kp N2               &kp F10           &kp F9            &kp F7            &kp L             &kp ENTER
+&kp LBKT          &kp S             &kp D             &kp F             &kp G             &kp LG(V)           &kp N2               &kp F10           &kp F9            &kp F7            &kp L             &kp ENTER
 &kp Z             &kp X             &kp C             &kp V             &kp B             &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)        &kp LS(LBKT)      &kp COMMA         &kp PERIOD        &kp SLASH
 &kp RSHIFT        &kp LEFT_GUI      &kp LCTRL         &kp LALT          &to 4             &to 2               &to 1                &to 3                                                                   &bt BT_NXT
             >;
