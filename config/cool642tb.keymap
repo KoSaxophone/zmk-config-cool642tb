@@ -286,8 +286,8 @@
         SYMBOL_LEFT {
             bindings = <
 &kp LS(NUMBER_1)        &kp LS(NUMBER_2)        &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                                  &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
-&kp LBKT                &kp LG(S)               &kp LC(LG(D))     &kp LG(TAB)       &kp LG(P)                &kp LG(V)           &kp N2               &kp H             &kp J             &kp K             &kp L             &kp ENTER
-&kp LA(LC(DELETE))      &kp LG(X)               &kp LG(K)         &kp LC(V)         &kp LC(B)                &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)        &kp LS(LBKT)      &kp COMMA         &kp PERIOD        &kp SLASH
+&kp LBKT                &kp LG(S)               &kp LC(LG(D))     &kp LG(TAB)       &kp LG(P)                &kp LG(V)           &kp N2               &kp H             &kp J             &kp K             &kp L             &kp RBKT
+&kp LA(LC(DELETE))      &kp LG(X)               &kp LG(K)         &kp LC(V)         &kp LC(B)                &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LS(RBKT)      &kp LS(BSLH)      &kp COMMA         &kp PERIOD        &kp BSLH
 &kp LS(LC(LEFT_ARROW))  &kp LC(LG(LEFT_ARROW))  &kp LC(HOME)      &kp LC(END)       &kp LC(LG(RIGHT_ARROW))  &kp LC(TAB)         &to 1                &to 3                                                                   &bt BT_NXT
             >;
 
