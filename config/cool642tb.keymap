@@ -298,7 +298,7 @@
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                               &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
 &kp LBKT          &kp S             &kp D             &kp F             &kp G             &kp LC(LS(ESCAPE))  &kp LS(INTERNATIONAL_1)  &kp H             &kp J             &kp K             &kp L             &kp RBKT
-&kp Z             &kp X             &kp C             &kp V             &kp B             &kp LC(END)         &kp LC(HOME)             &kp RS(AT)        &kp LS(LBKT)      &kp SEMICOLON     &kp SINGLE_QUOTE  &kp LEFT_BRACKET
+&kp Z             &kp X             &kp C             &kp V             &kp B             &kp LC(END)         &kp LC(HOME)             &kp RS(AT)        &kp LS(LBKT)      &kp SEMICOLON     &kp SINGLE_QUOTE  &kp BACKSLASH
 &kp LEFT_SHIFT    &kp LEFT_GUI      &kp LEFT_CONTROL  &kp LEFT_ALT      &to 4             &to 2               &to 1                    &to 3                                                                   &kp INTERNATIONAL_3
             >;
 
