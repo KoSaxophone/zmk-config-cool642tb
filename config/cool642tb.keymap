@@ -143,36 +143,6 @@
         };
     };
 
-    macros {
-        pw_o2: pw_o2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp N2 &kp N1 &kp O &kp O &kp N2 &kp N1 &kp O>;
-            label = "PW_O2";
-        };
-
-        pw_ha: pw_ha {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp H &kp A &kp R &kp M &kp O &kp N0 &kp N2 &kp N1 &kp N0>;
-            label = "PW_HA";
-        };
-
-        pw_Har: pw_Ha {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(H) &kp A &kp R &kp M &kp O &kp N0 &kp N2 &kp N1 &kp N0>;
-            label = "PW_HA";
-        };
-
-        pw_as: pw_as {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp S &kp C &kp N8 &kp N8 &kp N9 &kp N0>;
-            label = "PW_AS";
-        };
-    };
-
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
@@ -293,10 +263,10 @@
 
         FN {
             bindings = <
-&kp F1          &kp F2        &kp F3     &kp F4    &kp F5                                            &kp F6      &kp F7        &kp F8     &kp F9      &kp F10
-&kp F11         &kp F12       &kp F13    &kp F14   &kp F15  &kp LG(PERIOD)      &kp F16              &kp F16     &kp F17       &kp F18    &kp F19     &kp F20
-&kp F21         &kp F22       &kp F23    &kp F24   &kp B    &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)  &kp LS(LBKT)  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &kp LALT  &pw_ha   &pw_o2              &pw_Har              &pw_as                                           &to 5
+&kp F1          &kp F2        &kp F3     &kp F4    &kp F5                                              &kp F6      &kp F7        &kp F8     &kp F9      &kp F10
+&kp F11         &kp F12       &kp F13    &kp F14   &kp F15    &kp LG(PERIOD)      &kp F16              &kp F16     &kp F17       &kp F18    &kp F19     &kp F20
+&kp F21         &kp F22       &kp F23    &kp F24   &kp B      &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)  &kp LS(LBKT)  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &kp LALT  &kp LANG2  &kp SPACE           &kp SPACE            &kp LANG1                                        &to 5
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT_ARROW))>;
