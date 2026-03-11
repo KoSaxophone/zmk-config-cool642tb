@@ -62,76 +62,6 @@
             key-positions = <29 30>;
         };
 
-        up1 {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <0 1 2>;
-        };
-
-        up2 {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <1 2 3>;
-        };
-
-        up3 {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <4 3 2>;
-        };
-
-        up4 {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <5 6 7>;
-        };
-
-        up5 {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <6 7 8>;
-        };
-
-        right1 {
-            bindings = <&kp RIGHT_ARROW>;
-            key-positions = <9 21 33>;
-        };
-
-        right2 {
-            bindings = <&kp RIGHT_ARROW>;
-            key-positions = <21 33 42>;
-        };
-
-        right3 {
-            bindings = <&kp RIGHT_ARROW>;
-            key-positions = <4 14 26>;
-        };
-
-        right4 {
-            bindings = <&kp RIGHT_ARROW>;
-            key-positions = <14 26 38>;
-        };
-
-        left1 {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <0 10 22>;
-        };
-
-        left2 {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <10 22 34>;
-        };
-
-        left3 {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <16 28 40>;
-        };
-
-        left4 {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <5 17 29>;
-        };
-
-        left5 {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <17 29 41>;
-        };
-
         down1 {
             bindings = <&kp DOWN_ARROW>;
             key-positions = <34 35 36>;
@@ -175,6 +105,41 @@
         kana2 {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <40 41>;
+        };
+
+        kana3 {
+            bindings = <&kp LANG1>;
+            key-positions = <28 29>;
+        };
+
+        up1 {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <0 1 2>;
+        };
+
+        up2 {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <1 2 3>;
+        };
+
+        up3 {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <2 3 4>;
+        };
+
+        up4 {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <5 6 7>;
+        };
+
+        up5 {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <6 7 8>;
+        };
+
+        up6 {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <7 8 9>;
         };
     };
 
@@ -263,10 +228,10 @@
 
         shortcut {
             bindings = <
-&kp Q                   &kp LG(PAUSE_BREAK)     &kp E          &kp LC(R)    &kp T                                                        &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP     &mmv MOVE_RIGHT
-&kp LG(A)               &kp LG(S)               &kp LG(LC(D))  &kp LG(TAB)  &kp LG(P)                &kp LA(TAB)         &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &none           &mmv MOVE_RIGHT  &mmv MOVE_RIGHT
-&kp LA(LC(DELETE))      &kp LG(X)               &kp LG(K)      &kp LC(V)    &kp LC(B)                &kp LA(LEFT_ARROW)  &mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &mmv MOVE_RIGHT
-&kp LC(LS(LEFT_ARROW))  &kp LG(LC(LEFT_ARROW))  &kp LC(HOME)   &kp LC(END)  &kp LG(LC(RIGHT_ARROW))  &kp LC(TAB)         &to 1           &mmv MOVE_LEFT                                                   &bt BT_NXT
+&kp Q                   &kp LG(PAUSE_BREAK)     &kp E          &kp LC(R)    &kp T                                               &none  &none  &none  &none  &none
+&kp LG(A)               &kp LG(S)               &kp LG(LC(D))  &kp LG(TAB)  &kp LG(P)                &kp LA(TAB)         &none  &none  &none  &none  &none  &none
+&kp LA(LC(DELETE))      &kp LG(X)               &kp LG(K)      &kp LC(V)    &kp LC(B)                &kp LA(LEFT_ARROW)  &none  &none  &none  &none  &none  &none
+&kp LC(LS(LEFT_ARROW))  &kp LG(LC(LEFT_ARROW))  &kp LC(HOME)   &kp LC(END)  &kp LG(LC(RIGHT_ARROW))  &kp LC(TAB)         &to 1  &none                       &bt BT_NXT
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT))>;
@@ -274,10 +239,10 @@
 
         NUMBER {
             bindings = <
-&mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_UP                                               &kp LS(SEMI)          &kp N7  &kp N8  &kp N9  &kp MINUS
-&mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp LG(L)        &kp LS(INTERNATIONAL_1)  &kp LS(SINGLE_QUOTE)  &kp N4  &kp N5  &kp N6  &kp SLASH
-&mmv MOVE_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mmv MOVE_RIGHT  &kp LC(HOME)             &kp EQUAL             &kp N1  &kp N2  &kp N3  &kp LS(NUMBER_5)
-&mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &mmv MOVE_DOWN   &to 2            &kp LC(END)              &kp N0                                        &kp INTERNATIONAL_3
+&none  &none  &none  &none  &none                                      &kp LS(SEMI)          &kp N7  &kp N8  &kp N9  &kp MINUS
+&none  &none  &none  &none  &none  &kp LG(L)  &kp LS(INTERNATIONAL_1)  &kp LS(SINGLE_QUOTE)  &kp N4  &kp N5  &kp N6  &kp SLASH
+&none  &none  &none  &none  &none  &none      &kp LC(HOME)             &kp EQUAL             &kp N1  &kp N2  &kp N3  &kp LS(NUMBER_5)
+&none  &none  &none  &none  &none  &to 2      &kp LC(END)              &kp N0                                        &kp INTERNATIONAL_3
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -307,10 +272,10 @@
 
         FN {
             bindings = <
-&kp F1          &kp F2        &kp F3     &kp F4    &kp F5                                                &kp F6       &kp F7        &kp F8     &kp F9      &kp F10
-&kp F11         &kp F12       &kp F13    &kp F14   &kp F15      &kp LG(PERIOD)      &kp F16              &kp F16      &kp F17       &kp F18    &kp F19     &kp F20
-&kp F21         &kp F22       &kp F23    &kp F24   &kp B        &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)   &kp LS(LBKT)  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &kp LALT  &lt 1 SPACE  &kp N5              &kp N6               &lt 2 SPACE                                       &to 5
+&kp F1          &kp F2        &kp F3     &kp F4    &kp F5                                              &kp F6      &kp F7        &kp F8     &kp F9      &kp F10
+&kp F11         &kp F12       &kp F13    &kp F14   &kp F15    &kp LG(PERIOD)      &kp F16              &kp F16     &kp F17       &kp F18    &kp F19     &kp F20
+&kp F21         &kp F22       &kp F23    &kp F24   &kp B      &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)  &kp LS(LBKT)  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &kp LALT  &kp LANG2  &kp SPACE           &kp SPACE            &kp LANG1                                        &to 5
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
