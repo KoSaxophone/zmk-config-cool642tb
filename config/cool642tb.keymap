@@ -252,10 +252,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W         &mt LG(E) E  &mt LG(R) R   &kp T                                                           &mt LC(Y) Y  &kp U       &mt LS(MINUS) I      &mt LS(EQUAL) O     &mt MINUS P
-&mt LC(A) A  &mt LC(S) S   &mt LG(D) D  &mt LC(F) F   &kp G        &kp LS(LC(N4))      &mt LS(INTERNATIONAL_1) MINUS  &mt LC(H) H  &kp J       &mt SEMI K           &mt SQT L           &mt SLASH ENTER
-&mt LC(Z) Z  &mt LC(X) X   &mt LC(C) C  &mt LC(V) V   &mt LC(B) B  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)            &mt AT N     &mt LBKT M  &mt LS(COMMA) COMMA  &mt LS(PERIOD) DOT  &mt BSLH LS(N5)
-&kp LSHIFT   &kp LEFT_GUI  &kp LCTRL    &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE         &lt 1 SPACE                    &lt 3 LANG1                                                       &lt 5 INTERNATIONAL_3
+&kp Q           &kp W         &kp E      &kp R         &kp T                                                           &kp Y        &kp U  &kp I      &mt LS(EQUAL) O  &mt MINUS P
+&kp A           &kp S         &kp D      &kp F         &kp G        &kp LS(LC(N4))      &mt LS(INTERNATIONAL_1) MINUS  &kp H        &kp J  &kp K      &kp L            &kp ENTER
+&kp Z           &kp X         &kp C      &kp V         &kp B        &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)            &kp N        &kp M  &kp COMMA  &kp PERIOD       &kp FSLH
+&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE         &lt 1 SPACE                    &lt 3 LANG1                                     &lt 5 INTERNATIONAL_3
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
