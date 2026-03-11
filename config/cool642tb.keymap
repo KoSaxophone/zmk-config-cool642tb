@@ -255,7 +255,7 @@
 &kp LC(LS(LEFT_ARROW))  &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)  &kp LC(LG(D))  &kp LG(LC(RIGHT_ARROW))  &kp LC(TAB)         &to 1  &none                       &bt BT_NXT
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT))>;
+            sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT>;
         };
 
         NUMBER {
@@ -299,7 +299,7 @@
 &kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &kp LALT  &pw_ha   &pw_o2              &pw_Har              &pw_as                                           &to 5
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
+            sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT_ARROW))>;
         };
     };
 };
