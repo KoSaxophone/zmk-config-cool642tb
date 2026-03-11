@@ -249,10 +249,10 @@
 
         shortcut {
             bindings = <
-&kp LG(PAUSE_BREAK)     &kp LA(LC(DELETE))      &kp LG(I)    &kp LC(R)      &kp LG(K)                                           &none  &none  &none  &none  &none
-&kp LC(A)               &kp LC(S)               &kp D        &kp LC(F)      &kp LG(P)                &kp LA(TAB)         &none  &none  &none  &none  &none  &none
-&kp LC(Z)               &kp LC(X)               &kp LC(C)    &kp LC(V)      &kp LC(B)                &kp LA(LEFT_ARROW)  &none  &none  &none  &none  &none  &none
-&kp LC(LS(LEFT_ARROW))  &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)  &kp LC(LG(D))  &kp LG(LC(RIGHT_ARROW))  &kp LC(TAB)         &to 1  &none                       &bt BT_NXT
+&kp LG(PAUSE_BREAK)     &kp LA(LC(DELETE))      &kp LG(I)    &kp LC(R)      &kp LG(K)                                           &none           &kp UP_ARROW    &none            &none  &none
+&kp LC(A)               &kp LC(S)               &kp D        &kp LC(F)      &kp LG(P)                &kp LA(TAB)         &none  &kp LEFT_ARROW  &none           &kp RIGHT_ARROW  &none  &none
+&kp LC(Z)               &kp LC(X)               &kp LC(C)    &kp LC(V)      &kp LC(B)                &kp LA(LEFT_ARROW)  &none  &none           &kp DOWN_ARROW  &none            &none  &none
+&kp LC(LS(LEFT_ARROW))  &kp LG(LC(LEFT_ARROW))  &kp LG(TAB)  &kp LC(LG(D))  &kp LG(LC(RIGHT_ARROW))  &kp LC(TAB)         &to 1  &none                                                   &bt BT_NXT
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT>;
