@@ -255,7 +255,7 @@
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                               &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(LBKT)
 &kp LBKT          &kp S             &kp D             &kp F             &kp G             &kp LC(LS(ESCAPE))  &kp LS(INTERNATIONAL_1)  &kp H             &kp J             &kp K             &kp L             &kp RBKT
 &kp Z             &kp X             &kp C             &kp V             &kp B             &kp LC(END)         &kp LC(HOME)             &kp LS(RBKT)      &kp LS(BSLH)      &kp SEMICOLON     &kp SINGLE_QUOTE  &kp BACKSLASH
-&kp LEFT_SHIFT    &kp LEFT_GUI      &kp LEFT_CONTROL  &kp LEFT_ALT      &to 4             &to 2               &to 1                    &to 3                                                                   &kp INTERNATIONAL_3
+&kp LEFT_SHIFT    &kp LEFT_GUI      &kp LEFT_CONTROL  &kp LEFT_ALT      &to 4             &kp SPACE           &kp SPACE                &kp LANG1                                                               &kp INTERNATIONAL_3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
