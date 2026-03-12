@@ -259,10 +259,10 @@
 
         FN {
             bindings = <
-&kp F1          &kp F2        &kp F3     &kp F4    &kp F5                                              &kp F6      &kp F7        &kp F8     &kp F9      &kp F10
-&kp F11         &kp F12       &kp F13    &kp F14   &kp F15    &kp LG(PERIOD)      &kp F16              &kp F16     &kp F17       &kp F18    &kp F19     &kp F20
-&kp F21         &kp F22       &kp F23    &kp F24   &kp B      &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)  &kp LS(LBKT)  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LCTRL  &kp LALT  &kp LANG2  &kp SPACE           &kp SPACE            &kp LANG1                                        &trans
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                                            &kp F6      &kp F7        &kp F8     &kp F9      &kp F10
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp LG(PERIOD)      &kp F16              &kp F16     &kp F17       &kp F18    &kp F19     &kp F20
+&kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)  &kp LS(LBKT)  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &kp SPACE           &kp SPACE            &kp LANG1                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT_ARROW))>;
