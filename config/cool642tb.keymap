@@ -231,10 +231,10 @@
 
         shortcut {
             bindings = <
-&kp LG(PAUSE_BREAK)  &kp LA(LC(DELETE))      &kp LS(N3)  &kp LC(R)  &kp LG(K)                                             &none           &kp UP_ARROW    &kp UP_ARROW     &none            &none
-&kp LC(A)            &kp LC(S)               &kp D       &kp LC(F)  &kp LG(P)                &kp LA(TAB)          &none   &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &none
-&kp LC(Z)            &kp LC(X)               &kp LC(C)   &kp LC(V)  &kp LC(B)                &kp LA(LEFT_ARROW)   &none   &none           &kp DOWN_ARROW  &kp DOWN_ARROW   &none            &none
-&kp LG(LEFT_ARROW)   &kp LG(LC(LEFT_ARROW))  &kp LC(Z)   &kp LC(Y)  &kp LG(LC(RIGHT_ARROW))  &kp LG(RIGHT_ARROW)  &trans  &none                                                             &bt BT_NXT
+&kp LG(PAUSE_BREAK)  &kp LA(LC(DELETE))      &kp LS(N3)  &kp LC(R)  &kp LG(K)                                                     &kp UP_ARROW    &kp UP_ARROW    &kp UP_ARROW     &kp UP_ARROW     &kp UP_ARROW
+&kp LC(A)            &kp LC(S)               &kp D       &kp LC(F)  &kp LG(P)                &kp LA(TAB)          &kp LEFT_ARROW  &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW
+&kp LC(Z)            &kp LC(X)               &kp LC(C)   &kp LC(V)  &kp LC(B)                &kp LA(LEFT_ARROW)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp DOWN_ARROW
+&kp LG(LEFT_ARROW)   &kp LG(LC(LEFT_ARROW))  &kp LC(Z)   &kp LC(Y)  &kp LG(LC(RIGHT_ARROW))  &kp LG(RIGHT_ARROW)  &trans          &none                                                             &bt BT_NXT
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT>;
@@ -253,10 +253,10 @@
 
         SYMBOL_LEFT {
             bindings = <
-&kp LS(NUMBER_1)        &kp LS(NUMBER_2)        &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
-&kp LBKT                &kp LC(S)               &kp D             &kp LC(F)         &kp LG(P)                &kp LG(PERIOD)      &kp LS(INTERNATIONAL_1)  &kp LEFT_ARROW    &kp LEFT_ARROW    &kp RIGHT_ARROW   &kp RIGHT_ARROW   &kp RBKT
-&kp LC(Z)               &kp LC(X)               &kp LC(C)         &kp LC(V)         &kp LC(B)                &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)      &kp LS(RBKT)      &kp LS(BSLH)      &kp SEMI          &kp APOS          &kp BSLH
-&kp LS(LC(LEFT_ARROW))  &kp LC(LG(LEFT_ARROW))  &kp LC(HOME)      &kp LC(END)       &kp LC(LG(RIGHT_ARROW))  &kp LC(TAB)         &kp SPACE                &trans                                                                  &bt BT_NXT
+&kp LS(NUMBER_1)        &kp LS(NUMBER_2)        &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                                      &kp UP_ARROW    &kp UP_ARROW    &kp UP_ARROW     &kp UP_ARROW     &kp UP_ARROW
+&kp LBKT                &kp LC(S)               &kp D             &kp LC(F)         &kp LG(P)                &kp LG(PERIOD)      &kp LS(INTERNATIONAL_1)  &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW
+&kp LC(Z)               &kp LC(X)               &kp LC(C)         &kp LC(V)         &kp LC(B)                &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)      &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp DOWN_ARROW
+&kp LS(LC(LEFT_ARROW))  &kp LC(LG(LEFT_ARROW))  &kp LC(HOME)      &kp LC(END)       &kp LC(LG(RIGHT_ARROW))  &kp LC(TAB)         &kp SPACE                &trans                                                            &bt BT_NXT
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LEFT_ARROW) LC(RIGHT_ARROW)>;
