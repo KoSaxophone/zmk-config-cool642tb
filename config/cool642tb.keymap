@@ -231,10 +231,10 @@
 
         shortcut {
             bindings = <
-&kp LG(PAUSE_BREAK)  &kp LA(LC(DELETE))      &kp LS(N3)  &kp LC(R)  &kp LG(K)                                                     &kp UP_ARROW    &kp UP_ARROW    &kp UP_ARROW     &kp UP_ARROW     &kp UP_ARROW
-&kp LC(A)            &kp LC(S)               &kp D       &kp LC(F)  &kp LG(P)                &kp LA(TAB)          &kp LEFT_ARROW  &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW
-&kp LC(Z)            &kp LC(X)               &kp LC(C)   &kp LC(V)  &kp LC(B)                &kp LA(LEFT_ARROW)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp DOWN_ARROW
-&kp LG(LEFT_ARROW)   &kp LG(LC(LEFT_ARROW))  &kp LC(Z)   &kp LC(Y)  &kp LG(LC(RIGHT_ARROW))  &kp LG(RIGHT_ARROW)  &trans          &none                                                             &bt BT_NXT
+&kp LG(PAUSE_BREAK)  &kp LA(LC(DELETE))      &kp LS(N3)   &kp LC(R)  &kp LG(K)                                                     &kp UP_ARROW    &kp UP_ARROW    &kp UP_ARROW     &kp UP_ARROW     &kp UP_ARROW
+&kp LC(A)            &kp LC(S)               &kp LG(TAB)  &kp LC(F)  &kp LG(P)                &kp LA(TAB)          &kp LEFT_ARROW  &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW
+&kp LC(Z)            &kp LC(X)               &kp LC(C)    &kp LC(V)  &kp LC(B)                &kp LA(LEFT_ARROW)   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp DOWN_ARROW
+&kp LG(LEFT_ARROW)   &kp LG(LC(LEFT_ARROW))  &kp LC(Z)    &kp LC(Y)  &kp LG(LC(RIGHT_ARROW))  &kp LG(RIGHT_ARROW)  &trans          &none                                                             &bt BT_NXT
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT>;
