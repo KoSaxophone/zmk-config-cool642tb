@@ -28,7 +28,7 @@
         };
 
         caps_lock {
-            bindings = <&kp CAPSLOCK>;
+            bindings = <&kp LS(CAPSLOCK)>;
             key-positions = <22 23>;
         };
 
