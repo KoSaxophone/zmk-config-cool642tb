@@ -52,7 +52,7 @@
             key-positions = <7 9 8>;
         };
 
-        roman {
+        roman1 {
             bindings = <&kp LANGUAGE_2>;
             key-positions = <27 26>;
         };
@@ -140,6 +140,11 @@
         up6 {
             bindings = <&kp UP_ARROW>;
             key-positions = <7 8 9>;
+        };
+
+        roman2 {
+            bindings = <&kp LANG2>;
+            key-positions = <26 25>;
         };
     };
 
