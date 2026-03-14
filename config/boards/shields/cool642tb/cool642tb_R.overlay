@@ -20,9 +20,9 @@
     /* 通常時のマウスカーソル反転を補正 */
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
 
-    /* 【重要】レイヤー5（あなたがLANG9で切り替える先）にいる間だけスクロールにする */
+    /* 【重要】レイヤー6（あなたがAlt+←キーで切り替える先）にいる間だけスクロールにする */
     scroller {
-        layers = <5>;
+        layers = <6>;
         input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 64>;
     };
 };
@@ -63,7 +63,7 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
-        /* 内部チップ側のスクロール指定も5に合わせておく */
-        scroll-layers = <5>;
+        /* 内部チップ側のスクロール指定も新設した6に合わせておく */
+        scroll-layers = <6>;
     };
 };
