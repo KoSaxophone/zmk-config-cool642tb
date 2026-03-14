@@ -15,13 +15,20 @@
         ;
 };
 
-/* トラックボールの動きを制御するリスナー設定 */
-&trackball_listener {
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
+/ {
+    /* 場所の定義（ラベル）と設定をセットで行います */
+    trackball_listener: trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
 
-    scroller {
-        layers = <6>;
-        input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 64>;
+        /* 通常時のマウスカーソル反転を補正 */
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
+
+        /* レイヤー6にいる間だけスクロールにする */
+        scroller {
+            layers = <6>;
+            input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 64>;
+        };
     };
 };
 
