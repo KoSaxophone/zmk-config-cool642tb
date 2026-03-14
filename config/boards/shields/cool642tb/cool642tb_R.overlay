@@ -17,10 +17,10 @@
 
 /* トラックボールの動きを制御するリスナー設定 */
 &trackball_listener {
-    /* 通常時のマウスカーソルの向き調整（上下反転を補正） */
+    /* 通常時のマウスカーソル反転を補正 */
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
 
-    /* 【本命機能】レイヤー5（SCROLLレイヤー）にいる時だけスクロールに変える */
+    /* 【重要】レイヤー5（あなたがLANG9で切り替える先）にいる間だけスクロールにする */
     scroller {
         layers = <5>;
         input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 64>;
@@ -33,6 +33,10 @@
             psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 4)>,
                 <NRF_PSEL(SPIM_MISO, 0, 4)>;
+        };
+    };
+
+    spi0_sleep: spi0_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 5)>,
                 <NRF_PSEL(SPIM_MOSI, 0, 4)>,
@@ -59,7 +63,7 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
-        /* PMW3610標準のスクロールレイヤー指定（念のため5を指定） */
+        /* 内部チップ側のスクロール指定も5に合わせておく */
         scroll-layers = <5>;
     };
 };
