@@ -1,5 +1,6 @@
 #include "cool642tb.dtsi"
 #include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi> // これが足りなかったためにエラーが出ていました
 
 &default_transform {
     col-offset = <6>;
@@ -16,15 +17,14 @@
 };
 
 / {
-    /* 場所の定義（ラベル）と設定をセットで行います */
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        /* 通常時のマウスカーソル反転を補正 */
+        /* マウスカーソルの向き調整 */
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
 
-        /* レイヤー6にいる間だけスクロールにする */
+        /* レイヤー6にいる間だけスクロールにする設定 */
         scroller {
             layers = <6>;
             input-processors = <&zip_xy_to_scroll_mapper>, <&zip_scroll_scaler 1 64>;
