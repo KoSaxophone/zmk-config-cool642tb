@@ -146,6 +146,16 @@
             bindings = <&kp LANG2>;
             key-positions = <26 25>;
         };
+
+        roman3 {
+            bindings = <&kp LANG2>;
+            key-positions = <25 24>;
+        };
+
+        kana4 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <30 31>;
+        };
     };
 
     behaviors {
