@@ -285,10 +285,10 @@
 
         FN {
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                                            &none       &none               &kp LG(UP_ARROW)    &kp LG(UP_ARROW)     &none
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp LG(PERIOD)      &none                &none       &kp LG(LEFT_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(RIGHT_ARROW)
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)  &kp LS(LBKT)        &kp LG(DOWN_ARROW)  &kp LG(DOWN_ARROW)   &none
-&kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &pw_o2              &pw_ha               &kp LANG1                                                                &trans
+&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                                            &none       &none         &none  &none  &none
+&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp LG(PERIOD)      &none                &none       &none         &none  &none  &none
+&kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp RS(AT)  &kp LS(LBKT)  &none  &none  &none
+&kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &pw_o2              &pw_ha               &kp LANG1                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT_ARROW))>;
