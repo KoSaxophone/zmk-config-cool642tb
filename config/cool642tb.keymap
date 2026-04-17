@@ -276,7 +276,7 @@
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                     &kp LS(NUMBER_6)   &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(LBKT)
 &kp LBKT          &kp LEFT_ARROW    &kp LEFT_ARROW    &kp RIGHT_ARROW   &kp RIGHT_ARROW   &kp LC(LS(ESCAPE))  &kp LS(N8)     &kp LS(N9)         &kp J             &kp K             &kp L             &kp RBKT
-&kp Z             &kp X             &kp DOWN_ARROW    &kp DOWN_ARROW    &kp B             &kp LC(N0)          &kp LS(RBKT)   &kp LS(BACKSLASH)  &kp LS(M)         &kp SEMICOLON     &kp SINGLE_QUOTE  &kp BACKSLASH
+&kp Z             &kp X             &kp DOWN_ARROW    &kp DOWN_ARROW    &kp B             &kp LC(N0)          &kp LS(RBKT)   &kp LS(BACKSLASH)  &kp M             &kp SEMICOLON     &kp SINGLE_QUOTE  &kp BACKSLASH
 &kp LEFT_SHIFT    &kp LEFT_GUI      &kp LEFT_CONTROL  &kp LEFT_ALT      &trans            &kp SPACE           &kp LS(COMMA)  &kp LS(PERIOD)                                                           &kp INT3
             >;
 
