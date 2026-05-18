@@ -16,8 +16,9 @@
         };
     };
 
-    /* vtrackball への直接接続を再定義 */
-    scroll_listener: scroll_listener {
+    /* 既存のvtrackball設定と衝突しないように、名前を変更して「共存」させる */
+    /* これが cool642tb でスクロールを動かすための専用設計です */
+    scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
         bindings = <&sc 100>;
