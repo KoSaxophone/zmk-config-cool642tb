@@ -2,11 +2,19 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/input_processors.h>
 
 / {
-    /* これがドキュメントにある「魔法の杖」の呼び出しです。
-       上の input_processors.h を読み込むことで、初めてこの言葉が有効になります。 */
+    /* 公式ドキュメントの "Example" 節に基づいたカスタム定義 */
+    /* これなら「標準機能がまだ未実装」という環境でも物理的に動きます */
+    input_processors {
+        zip_xy_to_scroll_mapper: zip_xy_to_scroll_mapper {
+            compatible = "zmk,input-processor-code-mapper";
+            #input-processor-cells = <0>;
+            type = <INPUT_EV_REL>;
+            map = <0 6>, <1 8>; /* X->HWHEEL, Y->WHEEL */
+        };
+    };
+
     &vtrackball {
         input-processors = <&zip_xy_to_scroll_mapper>;
     };
