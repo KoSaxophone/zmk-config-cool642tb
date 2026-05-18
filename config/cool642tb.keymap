@@ -16,7 +16,7 @@
         };
     };
 
-    /* vtrackball = cool642tbの心臓部 */
+    /* vtrackball への直接接続を再定義 */
     scroll_listener: scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
