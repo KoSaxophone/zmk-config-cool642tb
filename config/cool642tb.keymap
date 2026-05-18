@@ -3,9 +3,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
-#include "input_behavior_listener.h"
 
 / {
+    /* ZMK標準のスクロール動作（urob氏のファイル不要） */
     behaviors {
         sc: scroll_behavior {
             compatible = "zmk,behavior-input-two-axis";
@@ -16,12 +16,10 @@
         };
     };
 
-    /* 既存の移動設定を活かしつつ、スクロール機能を追加した統合リスナー */
-    /* これで「競合」は物理的に起こらなくなります */
-    vtrackball_scroll_listener {
-        compatible = "zmk,input-behavior-listener";
+    /* cool642tbの心臓部 vtrackball と標準機能を直接つなぐ */
+    scroll_listener {
+        compatible = "zmk,input-listener";
         device = <&vtrackball>;
-        layers = <0>;
         bindings = <&sc 100>;
     };
 
