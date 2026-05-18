@@ -9,7 +9,6 @@
 #define SCROLL_SPEED 100
 
 / {
-    /* 1. スクロール動作そのものの定義 */
     behaviors {
         scroll_behavior: scroll_behavior {
             compatible = "zmk,behavior-input-two-axis";
@@ -21,8 +20,7 @@
         };
     };
 
-    /* 2. トラックボールの動きを監視してスクロールに変換する設定 */
-    /* device = <&vtrackball> が cool642tb の正解です */
+    /* このノード構成が urob-listener の仕様です */
     scroll_listener: scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
