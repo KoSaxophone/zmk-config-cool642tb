@@ -4,9 +4,20 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
-    /* cool642tbのボール(vtrackball)に、標準のスクロール魔法をかける */
+    /* 魔法の杖（&zip_xy_to_scroll_mapper）の中身を自分で定義します */
+    /* これにより「そんな定義ないよ」というエラーを物理的に回避します */
+    input_processors {
+        my_scroll_mapper: my_scroll_mapper {
+            compatible = "zmk,input-processor-code-mapper";
+            #input-processor-cells = <0>;
+            type = <INPUT_EV_REL>;
+            map = <INPUT_REL_X INPUT_REL_HWHEEL>, <INPUT_REL_Y INPUT_REL_WHEEL>;
+        };
+    };
+
+    /* cool642tbのボール(vtrackball)に、自作した変換を適用 */
     &vtrackball {
-        input-processors = <&zip_xy_to_scroll_mapper>;
+        input-processors = <&my_scroll_mapper>;
     };
 
     keymap {
