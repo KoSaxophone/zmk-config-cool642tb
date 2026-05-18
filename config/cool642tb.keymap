@@ -270,3 +270,6 @@
         };
     };
 };
+
+&left_encoder { resolution = <4>; };
+&right_encoder { resolution = <4>; };
