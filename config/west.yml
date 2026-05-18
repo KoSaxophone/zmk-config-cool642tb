@@ -1,21 +1,17 @@
 manifest:
-  remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: telzo2000
-      url-base: https://github.com/telzo2000
-    - name: urob
-      url-base: https://github.com/urob
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: origin
+      url: https://github.com/zmkfirmware/zmk
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: telzo2000
+      remote: origin
+      url: https://github.com/telzo2000/zmk-pmw3610-driver
       revision: main
     - name: zmk-input-behavior-listener
-      remote: urob
+      remote: origin
+      url: https://github.com/urob/zmk-input-behavior-listener
       revision: main
   self:
     path: config
