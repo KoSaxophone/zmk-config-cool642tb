@@ -16,9 +16,7 @@
         };
     };
 
-    /* 'vtrackball_listener' は本体が使うので、
-       'vtrackball_scroll_listener' という別名で、
-       同じデバイス 'vtrackball' から信号を横取りします。 */
+    /* 独立した名前で、vtrackball からスクロール命令を生成 */
     vtrackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
