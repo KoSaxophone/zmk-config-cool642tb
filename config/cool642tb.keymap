@@ -3,10 +3,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
-#include "input_behavior_listener.h"
+#include "include/input_behavior_listener.h"
+
+#define SCROLL_SPEED 100
 
 / {
-    /* マウススクロールの動作定義 */
     behaviors {
         sc: scroll_behavior {
             compatible = "zmk,behavior-input-two-axis";
@@ -17,8 +18,8 @@
         };
     };
 
-    /* リスナー：vtrackballの入力をscに送る */
-    listener {
+    /* cool642tbのデバイスツリーに基づいた正しい設定 */
+    scroll_listener: scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
         bindings = <&sc 100>;
