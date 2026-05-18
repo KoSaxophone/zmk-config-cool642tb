@@ -3,13 +3,13 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
-#include "zephyr/dt-bindings/zmk/input_behavior_listener.h"
+#include <dt-bindings/zmk/input_behavior_listener.h>
 
-#define BINDING_LIMIT 0
-#define SCROLL_SIZE 10
+/* スクロール設定 */
 #define SCROLL_SPEED 100
 
 / {
+    /* スクロール動作の定義 */
     behaviors {
         scroll_behavior: scroll_behavior {
             compatible = "zmk,behavior-input-two-axis";
@@ -21,10 +21,11 @@
         };
     };
 
-    /* この device 名だけが唯一の正解です */
+    /* トラックボール入力をスクロールに変換 */
+    /* device = <&vtrackball> がこのボードの正解です */
     tb_scroll_listener: tb_scroll_listener {
         compatible = "zmk,input-behavior-listener";
-        device = <&trackball_peripheral>;
+        device = <&vtrackball>;
         layers = <0>;
         bindings = <&scroll_behavior SCROLL_SPEED>;
     };
