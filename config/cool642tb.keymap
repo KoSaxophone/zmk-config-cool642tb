@@ -2,36 +2,23 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/input_transform.h>
 
 / {
-    /* ボールの動きを「スクロール」用の信号（REL_WHEEL）に変換する Processor */
+    /* 1. 移動をスクロールに変換する「部品」を定義 */
+    /* 外部の.hは不要。直接 INPUT_REL_X などの値を使います */
     scroll_processor: scroll_processor {
         compatible = "zmk,input-processor-code-mapper";
         #input-processor-cells = <0>;
-        map = <INPUT_REL_X INPUT_REL_HWHEEL>, <INPUT_REL_Y INPUT_REL_WHEEL>;
+        map = <0x00 0x06>, <0x01 0x08>; /* REL_X->REL_HWHEEL, REL_Y->REL_WHEEL */
     };
 
-    /* 通常の移動用 Processor (1:1) */
-    move_processor: move_processor {
-        compatible = "zmk,input-processor-scaler";
-        #input-processor-cells = <2>;
-        mul-n = <1>;
-        mul-d = <1>;
-    };
-
-    /* cool642tbのボール(vtrackball)の設定を上書き */
+    /* 2. トラックボール(vtrackball)の設定。レイヤー1の時だけスクロールに切り替える */
     &vtrackball {
-        input-processors = 
-            /* レイヤー1の時だけスクロールに変換、それ以外は移動 */
-            <&scroll_processor>,
-            <&move_processor 1 1>;
+        input-processors = <&scroll_processor>;
     };
 
     keymap {
         compatible = "zmk,keymap";
-        
-        /* Layer 0: 通常レイヤー（ボールはマウス移動） */
         default_layer {
             bindings = <
                 &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I &kp O &kp P
@@ -41,7 +28,7 @@
             >;
         };
 
-        /* Layer 1: スクロールレイヤー（ここを押している間、ボールでスクロール） */
+        /* このレイヤーにいる間、上記のscroll_processorが発動します */
         scroll_layer {
             bindings = <
                 &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
