@@ -4,19 +4,6 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
-    /* 公式ドキュメント通りの Code Mapper 定義 */
-    scroll_mapper: scroll_mapper {
-        compatible = "zmk,input-processor-code-mapper";
-        #input-processor-cells = <0>;
-        /* X移動(0)を横スクロール(6)に、Y移動(1)を縦スクロール(8)に変換 */
-        map = <0 6>, <1 8>; 
-    };
-
-    /* トラックボール(vtrackball)にこの変換を適用 */
-    &vtrackball {
-        input-processors = <&scroll_mapper>;
-    };
-
     keymap {
         compatible = "zmk,keymap";
         default_layer {
