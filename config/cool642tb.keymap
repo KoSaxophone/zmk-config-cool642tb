@@ -5,11 +5,32 @@
 #include <dt-bindings/zmk/mouse.h>
 #include "zephyr/dt-bindings/zmk/input_behavior_listener.h"
 
+/* urob-listener用のスクロール設定 */
 #define BINDING_LIMIT 0
 #define SCROLL_SIZE 10
 #define SCROLL_SPEED 100
 
 / {
+    /* スクロール動作の定義を追加 */
+    behaviors {
+        scroll_behavior: scroll_behavior {
+            compatible = "zmk,behavior-input-two-axis";
+            #binding-cells = <1>;
+            x-input-code = <INPUT_REL_HWHEEL>;
+            y-input-code = <INPUT_REL_WHEEL>;
+            time-to-max-speed-ms = <100>;
+            acceleration-exponent = <1>;
+        };
+    };
+
+    /* トラックボールの入力をスクロールに変換するリスナーを設定 */
+    tb_scroll_listener: tb_scroll_listener {
+        compatible = "zmk,input-behavior-listener";
+        device = <&vtrackball>;
+        layers = <0>; // デフォルトレイヤーで有効
+        bindings = <&scroll_behavior SCROLL_SPEED>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
