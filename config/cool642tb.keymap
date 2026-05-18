@@ -3,13 +3,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/input_behavior_listener.h>
+#include "zephyr/dt-bindings/zmk/input_behavior_listener.h"
 
 /* スクロール設定 */
 #define SCROLL_SPEED 100
 
 / {
-    /* スクロール動作の定義 */
     behaviors {
         scroll_behavior: scroll_behavior {
             compatible = "zmk,behavior-input-two-axis";
@@ -21,8 +20,7 @@
         };
     };
 
-    /* トラックボール入力をスクロールに変換 */
-    /* device = <&vtrackball> がこのボードの正解です */
+    /* cool642tbの心臓部：このデバイス名「vtrackball」が最終的な正解です */
     tb_scroll_listener: tb_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
