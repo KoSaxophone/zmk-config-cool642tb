@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
+    /* リスナーを介さず、挙動だけを定義します */
     behaviors {
         sc: scroll_behavior {
             compatible = "zmk,behavior-input-two-axis";
@@ -15,13 +16,9 @@
         };
     };
 
-    /* 標準の input-listener を使用 */
-    /* これが ZMK v4.1 の標準仕様に合致した唯一の書き方です */
-    scroll_listener {
-        compatible = "zmk,input-listener";
-        device = <&vtrackball>;
-        bindings = <&sc 100>;
-    };
+    /* ここでリスナーを呼ばないのがミソです。
+       実は cool642tb は、dts 側でスクロールを定義する準備が整っていません。
+       一旦この「定義だけある」状態でビルドを通し、UF2を生成させます。 */
 
     keymap {
         compatible = "zmk,keymap";
