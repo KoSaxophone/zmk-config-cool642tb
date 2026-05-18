@@ -288,3 +288,12 @@
 /* 左右のエンコーダーにこの低速設定を適用 */
 &left_encoder { resolution = <2>; };
 &right_encoder { resolution = <2>; };
+
+/* 解像度を 4 に上げ、反応をさらに鈍くします */
+&left_encoder { resolution = <4>; };
+&right_encoder { resolution = <4>; };
+
+/* 1回の入力が確実に「1回分」として認識されるよう、信号の間隔をさらに広げます */
+&slow_sc {
+    tap-ms = <200>; 
+};
