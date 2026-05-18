@@ -4,19 +4,19 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
-    /* 公式ドキュメントの "Example" 節に基づいたカスタム定義 */
-    /* これなら「標準機能がまだ未実装」という環境でも物理的に動きます */
-    input_processors {
-        zip_xy_to_scroll_mapper: zip_xy_to_scroll_mapper {
-            compatible = "zmk,input-processor-code-mapper";
-            #input-processor-cells = <0>;
-            type = <INPUT_EV_REL>;
-            map = <0 6>, <1 8>; /* X->HWHEEL, Y->WHEEL */
-        };
+    /* 公式ドキュメントの定義。名前を 'z_scroll' と短くし、
+       システム側との衝突（重複定義）を避けます */
+    z_scroll: z_scroll {
+        compatible = "zmk,input-processor-code-mapper";
+        #input-processor-cells = <0>;
+        type = <INPUT_EV_REL>;
+        map = <0 6>, <1 8>;
     };
 
+    /* 'vtrackball' ではなく、物理デバイス名 '&vtrackball' を
+       直接上書きして、プロセッサーを1つだけに固定します */
     &vtrackball {
-        input-processors = <&zip_xy_to_scroll_mapper>;
+        input-processors = <&z_scroll>;
     };
 
     keymap {
