@@ -21,10 +21,10 @@
         };
     };
 
-    /* cool642tbの標準的なデバイス名「trackball」に修正 */
+    /* この device 名だけが唯一の正解です */
     tb_scroll_listener: tb_scroll_listener {
         compatible = "zmk,input-behavior-listener";
-        device = <&trackball>;
+        device = <&trackball_peripheral>;
         layers = <0>;
         bindings = <&scroll_behavior SCROLL_SPEED>;
     };
