@@ -5,3 +5,5 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      extra_cmake_args: "-DZMK_EXTRA_MODULES='/__w/zmk-config-cool642tb/zmk-config-cool642tb'"
