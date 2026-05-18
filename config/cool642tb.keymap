@@ -16,11 +16,12 @@
         };
     };
 
-    /* 既存のvtrackball設定と衝突しないように、名前を変更して「共存」させる */
-    /* これが cool642tb でスクロールを動かすための専用設計です */
-    scroll_listener {
+    /* 既存の定義名 'vtrackball_listener' を直接乗っ取り、
+       移動とスクロールを同時に受け取れるようにします */
+    vtrackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
+        layers = <0>;
         bindings = <&sc 100>;
     };
 
