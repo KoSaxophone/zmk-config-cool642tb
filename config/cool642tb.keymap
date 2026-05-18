@@ -273,3 +273,18 @@
 
 &left_encoder { resolution = <4>; };
 &right_encoder { resolution = <4>; };
+
+/ {
+    behaviors {
+        slow_sc: slow_sc {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_AC_SCROLL_UP>, <&kp C_AC_SCROLL_DOWN>;
+            tap-ms = <120>; /* ここを長くして、連打を抑えます */
+        };
+    };
+};
+
+/* 左右のエンコーダーにこの低速設定を適用 */
+&left_encoder { resolution = <2>; };
+&right_encoder { resolution = <2>; };
