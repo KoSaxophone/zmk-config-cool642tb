@@ -19,13 +19,12 @@
         };
     };
 
-    /* デバイス名を vtrackball に戻し、構文を最小限に絞る */
+    /* 最新のZMK仕様に合わせた最小限のリスナー定義 */
     scroll_listener: scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <0>;
         bindings = <&scroll_behavior SCROLL_SPEED>;
-    };
+    } ;
 
     keymap {
         compatible = "zmk,keymap";
