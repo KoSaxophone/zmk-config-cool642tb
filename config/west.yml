@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: telzo2000
       url-base: https://github.com/telzo2000
-    - name: urob
-      url-base: https://github.com/urob
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,7 +13,7 @@ manifest:
       remote: telzo2000
       revision: main
     - name: zmk-input-behavior-listener
-      remote: urob
+      url: https://github.com/urob/zmk-input-behavior-listener.git
       revision: main
   self:
     path: config
