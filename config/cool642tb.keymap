@@ -16,12 +16,12 @@
         };
     };
 
-    /* 既存の定義名 'vtrackball_listener' を直接乗っ取り、
-       移動とスクロールを同時に受け取れるようにします */
-    vtrackball_listener {
+    /* 'vtrackball_listener' は本体が使うので、
+       'vtrackball_scroll_listener' という別名で、
+       同じデバイス 'vtrackball' から信号を横取りします。 */
+    vtrackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        layers = <0>;
         bindings = <&sc 100>;
     };
 
