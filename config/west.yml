@@ -17,6 +17,5 @@ manifest:
     - name: zmk-input-behavior-listener
       remote: urob
       revision: main
-      import: zephyr/module.yml
   self:
     path: config
