@@ -4,6 +4,11 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
+    /* cool642tbのボール(vtrackball)に、標準のスクロール魔法をかける */
+    &vtrackball {
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
