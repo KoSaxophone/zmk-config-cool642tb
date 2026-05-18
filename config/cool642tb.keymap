@@ -5,26 +5,24 @@
 #include <dt-bindings/zmk/mouse.h>
 #include "input_behavior_listener.h"
 
-#define SCROLL_SPEED 100
-
 / {
+    /* マウススクロールの動作定義 */
     behaviors {
-        scroll_behavior: scroll_behavior {
+        sc: scroll_behavior {
             compatible = "zmk,behavior-input-two-axis";
             #binding-cells = <1>;
             x-input-code = <INPUT_REL_HWHEEL>;
             y-input-code = <INPUT_REL_WHEEL>;
             time-to-max-speed-ms = <100>;
-            acceleration-exponent = <1>;
         };
     };
 
-    /* 最新のZMK仕様に合わせた最小限のリスナー定義 */
-    scroll_listener: scroll_listener {
+    /* リスナー：vtrackballの入力をscに送る */
+    listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
-        bindings = <&scroll_behavior SCROLL_SPEED>;
-    } ;
+        bindings = <&sc 100>;
+    };
 
     keymap {
         compatible = "zmk,keymap";
