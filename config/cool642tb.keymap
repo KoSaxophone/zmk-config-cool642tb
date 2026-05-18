@@ -4,19 +4,9 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
-    /* 1. 移動をスクロールに変換する「部品」を定義 */
-    /* 外部の.hは不要。直接 INPUT_REL_X などの値を使います */
-    scroll_processor: scroll_processor {
-        compatible = "zmk,input-processor-code-mapper";
-        #input-processor-cells = <0>;
-        map = <0x00 0x06>, <0x01 0x08>; /* REL_X->REL_HWHEEL, REL_Y->REL_WHEEL */
-    };
-
-    /* 2. トラックボール(vtrackball)の設定。レイヤー1の時だけスクロールに切り替える */
-    &vtrackball {
-        input-processors = <&scroll_processor>;
-    };
-
+    /* ListenerもProcessorも記述しません。
+       これにより、組み立て（ビルド）時の衝突を物理的に排除します。
+    */
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -24,17 +14,7 @@
                 &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I &kp O &kp P
                 &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K &kp L &kp SEMI
                 &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-                &none &none &kp LCTRL &mo 1 &kp SPACE &none &none &none
-            >;
-        };
-
-        /* このレイヤーにいる間、上記のscroll_processorが発動します */
-        scroll_layer {
-            bindings = <
-                &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans
+                &none &none &kp LCTRL &kp LSHFT &kp SPACE &none &none &none
             >;
         };
     };
