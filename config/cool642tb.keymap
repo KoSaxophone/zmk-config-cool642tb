@@ -5,7 +5,6 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
-    /* ZMK標準のスクロール動作（urob氏のファイル不要） */
     behaviors {
         sc: scroll_behavior {
             compatible = "zmk,behavior-input-two-axis";
@@ -16,7 +15,8 @@
         };
     };
 
-    /* cool642tbの心臓部 vtrackball と標準機能を直接つなぐ */
+    /* 標準の input-listener を使用 */
+    /* これが ZMK v4.1 の標準仕様に合致した唯一の書き方です */
     scroll_listener {
         compatible = "zmk,input-listener";
         device = <&vtrackball>;
