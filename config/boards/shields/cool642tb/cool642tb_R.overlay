@@ -1,14 +1,14 @@
-#include <dt-bindings/zmk/input_transform.h>
-
+/* 公式ドキュメント通りの Mapper 定義。名前を変えて衝突を避けます */
 / {
-    scroll_mapper: scroll_mapper {
+    my_scroll_mapper: my_scroll_mapper {
         compatible = "zmk,input-processor-code-mapper";
         #input-processor-cells = <0>;
-        type = <0x02>; /* REL */
-        map = <0 6>, <1 8>; /* X->HWHEEL, Y->WHEEL */
+        type = <0x02>;
+        map = <0 6>, <1 8>;
     };
 };
 
+/* 既存の &vtrackball 定義を壊さず、追加（append）の形で Processor を差し込みます */
 &vtrackball {
-    input-processors = <&scroll_mapper>;
+    input-processors = <&my_scroll_mapper>;
 };
