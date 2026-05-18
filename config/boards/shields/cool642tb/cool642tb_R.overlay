@@ -1,15 +1,14 @@
-#include <dt-bindings/zmk/input_transform.h>
-#include <dt-bindings/zmk/mouse.h>
-
-&vtrackball {
-    input-processors = <&scroll_mapper>;
-};
-
 / {
+    /* 公式ドキュメント通りの Mapper インスタンス */
     scroll_mapper: scroll_mapper {
         compatible = "zmk,input-processor-code-mapper";
         #input-processor-cells = <0>;
-        /* Xを横スクロールに、Yを縦スクロールに変換 */
-        map = <INPUT_REL_X INPUT_REL_HWHEEL>, <INPUT_REL_Y INPUT_REL_WHEEL>;
+        type = <0x02>; /* INPUT_EV_REL */
+        map = <0 6>, <1 8>; /* X->HWHEEL, Y->WHEEL */
     };
+};
+
+/* トラックボールの定義に直接 Processor を紐付けます */
+&vtrackball {
+    input-processors = <&scroll_mapper>;
 };
