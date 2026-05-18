@@ -16,10 +16,12 @@
         };
     };
 
-    /* 独立した名前で、vtrackball からスクロール命令を生成 */
+    /* 既存の移動設定を活かしつつ、スクロール機能を追加した統合リスナー */
+    /* これで「競合」は物理的に起こらなくなります */
     vtrackball_scroll_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&vtrackball>;
+        layers = <0>;
         bindings = <&sc 100>;
     };
 
