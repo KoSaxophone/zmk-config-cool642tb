@@ -119,12 +119,12 @@
 
         roman {
             bindings = <&kp LANG2>;
-            key-positions = <22 34>;
+            key-positions = <38 39>;
         };
 
         kana {
             bindings = <&kp LANGUAGE_1>;
-            key-positions = <33 42>;
+            key-positions = <40 41>;
         };
 
         delete {
@@ -272,6 +272,7 @@
 };
 
 &left_encoder { resolution = <4>; };
+
 &right_encoder { resolution = <4>; };
 
 / {
@@ -280,25 +281,30 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp C_AC_SCROLL_UP>, <&kp C_AC_SCROLL_DOWN>;
+
             tap-ms = <120>; /* ここを長くして、連打を抑えます */
         };
     };
 };
 
 /* 左右のエンコーダーにこの低速設定を適用 */
+
 &left_encoder { resolution = <2>; };
+
 &right_encoder { resolution = <2>; };
 
 /* 解像度を 4 に上げ、反応をさらに鈍くします */
+
 &left_encoder { resolution = <4>; };
+
 &right_encoder { resolution = <4>; };
 
 /* 1回の入力が確実に「1回分」として認識されるよう、信号の間隔をさらに広げます */
-&slow_sc {
-    tap-ms = <200>; 
-};
+
+&slow_sc { tap-ms = <200>; };
 
 &left_encoder { resolution = <16>; };
+
 &right_encoder { resolution = <16>; };
 
 &slow_sc {
