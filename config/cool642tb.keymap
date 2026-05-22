@@ -112,8 +112,8 @@
             key-positions = <6 7 8>;
         };
 
-        up6 {
-            bindings = <&kp UP_ARROW>;
+        delete {
+            bindings = <&kp DEL>;
             key-positions = <7 8 9>;
         };
 
@@ -125,11 +125,6 @@
         kana {
             bindings = <&kp LANGUAGE_1>;
             key-positions = <40 41>;
-        };
-
-        delete {
-            bindings = <&kp DEL>;
-            key-positions = <20 21>;
         };
     };
 
