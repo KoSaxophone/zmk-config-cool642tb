@@ -127,9 +127,9 @@
             key-positions = <40 41>;
         };
 
-        today {
+        YYYYMMDD {
             bindings = <&today>;
-            key-positions = <11 12 13>;
+            key-positions = <4 3>;
         };
     };
 
