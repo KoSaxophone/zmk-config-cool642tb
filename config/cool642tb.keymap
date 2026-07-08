@@ -127,9 +127,9 @@
             key-positions = <40 41>;
         };
 
-        YYYYMMDD {
-            bindings = <&today>;
-            key-positions = <4 3>;
+        debug {
+            bindings = <&debug>;
+            key-positions = <26 12>;
         };
     };
 
@@ -199,11 +199,11 @@
             label = "PW_HA";
         };
 
-        today: today {
+        debug: debug {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(D)))>;
-            label = "TODAY";
+            bindings = <&none &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp SPACE &kp LS(D) &kp LS(E) &kp LS(B) &kp LS(U) &kp LS(G) &kp SPACE &kp LS(S) &kp LS(T) &kp LS(A) &kp LS(R) &kp LS(T) &kp SPACE &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp RET &kp RET &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp SPACE &kp LS(D) &kp LS(E) &kp LS(B) &kp LS(U) &kp LS(G) &kp SPACE &kp LS(E) &kp LS(N) &kp LS(D) &kp SPACE &kp SPACE &kp SPACE &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL>;
+            label = "DEBUG";
         };
     };
 
