@@ -126,6 +126,11 @@
             bindings = <&kp LANGUAGE_1>;
             key-positions = <40 41>;
         };
+
+        today {
+            bindings = <&today>;
+            key-positions = <11 12 13>;
+        };
     };
 
     behaviors {
@@ -192,6 +197,13 @@
             #binding-cells = <0>;
             bindings = <&kp H &kp A &kp R &kp M &kp O &kp N0 &kp N2 &kp N1 &kp N0>;
             label = "PW_HA";
+        };
+
+        today: today {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(D)))>;
+            label = "TODAY";
         };
     };
 
