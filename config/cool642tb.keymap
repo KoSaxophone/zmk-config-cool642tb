@@ -234,10 +234,10 @@
 
         NUMBER {
             bindings = <
-&kp LS(N1)      &kp LS(N2)      &kp LS(N3)      &kp LS(N4)       &kp LS(N5)                                                    &kp LS(SEMI)          &kp MINUS   &kp N7        &kp N8  &kp N9
-&kp LBKT        &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp LG(L)           &kp LS(INTERNATIONAL_1)  &kp LS(SINGLE_QUOTE)  &kp SLASH   &kp N4        &kp N5  &kp N6
-&kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)      &kp EQUAL             &kp LS(N5)  &kp NUMBER_1  &kp N2  &kp N3
-&none           &none           &none           &none            &kp LANGUAGE_2   &trans              &kp SINGLE_QUOTE         &kp N0                                                  &kp SEMICOLON
+&kp LS(N1)      &kp LS(N2)      &kp LS(N3)      &kp LS(N4)       &kp LS(N5)                                                  &kp LS(SEMI)          &kp MINUS   &kp N7        &kp N8  &kp N9
+&kp LBKT        &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp LG(L)         &kp LS(INTERNATIONAL_1)  &kp LS(SINGLE_QUOTE)  &kp SLASH   &kp N4        &kp N5  &kp N6
+&kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp LC(NUMBER_0)  &kp LA(RIGHT_ARROW)      &kp EQUAL             &kp LS(N5)  &kp NUMBER_1  &kp N2  &kp N3
+&none           &none           &none           &none            &kp LANGUAGE_2   &trans            &kp SINGLE_QUOTE         &kp N0                                                  &kp SEMICOLON
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
