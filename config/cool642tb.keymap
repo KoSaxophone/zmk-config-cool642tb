@@ -252,6 +252,14 @@
             bindings = <&kp LS(LEFT_BRACKET) &kp LS(LEFT_BRACKET) &kp LEFT_ARROW>;
             label = "QUOT_BACK";
         };
+
+        change_app: change_app {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LEFT_ALT &kp TAB>;
+
+            label = "CHANGE_APP";
+        };
     };
 
     keymap {
@@ -261,7 +269,7 @@
             bindings = <
 &kp Q                    &kp W     &kp E      &kp R         &kp T                                                      &kp Y             &mt LS(MINUS) U  &mt LS(EQUAL) I      &mt MINUS O            &kp P
 &kp A                    &kp S     &kp D      &kp F         &kp G        &kp LS(LG(S))  &mt LS(INTERNATIONAL_1) MINUS  &kp H             &kp J            &kp K                &kp L                  &mt RBKT ENTER
-&kp Z                    &kp X     &kp C      &kp V         &kp B        &kp SPACE      &mt LEFT_CONTROL LANG1         &kp N             &kp M            &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
+&kp Z                    &kp X     &kp C      &kp V         &kp B        &kp SPACE      &change_app                    &kp N             &kp M            &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
 &mt LEFT_SHIFT LS(HOME)  &kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE    &lt 1 BACKSPACE                &lt 3 LANGUAGE_1                                                               &lt 5 INTERNATIONAL_3
             >;
 
