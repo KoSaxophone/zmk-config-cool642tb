@@ -228,7 +228,7 @@
         angle: angle {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(COMMA) &kp PERIOD &kp LEFT_ARROW>;
+            bindings = <&kp LS(COMMA) &kp LS(PERIOD) &kp LEFT_ARROW>;
             label = "ANGLE";
         };
     };
