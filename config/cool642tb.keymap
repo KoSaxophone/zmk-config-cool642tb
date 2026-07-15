@@ -126,6 +126,16 @@
             bindings = <&kp LANGUAGE_1>;
             key-positions = <40 41>;
         };
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <22 23>;
+        };
+
+        redo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <5 6>;
+        };
     };
 
     behaviors {
@@ -194,11 +204,11 @@
             label = "PW_HA";
         };
 
-        debug: debug {
+        all_copy: all_copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp SPACE &kp LS(D) &kp LS(E) &kp LS(B) &kp LS(U) &kp LS(G) &kp SPACE &kp LS(S) &kp LS(T) &kp LS(A) &kp LS(R) &kp LS(T) &kp SPACE &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp RET &kp RET &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp SPACE &kp LS(D) &kp LS(E) &kp LS(B) &kp LS(U) &kp LS(G) &kp SPACE &kp LS(E) &kp LS(N) &kp LS(D) &kp SPACE &kp SPACE &kp SPACE &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL &kp EQUAL>;
-            label = "DEBUG";
+            bindings = <&kp LC(A) &kp LC(C)>;
+            label = "ALL_COPY";
         };
     };
 
@@ -219,7 +229,7 @@
         shortcut {
             bindings = <
 &kp LG(PAUSE_BREAK)  &kp LA(LC(DELETE))      &kp LS(N3)   &kp LC(R)  &kp LG(K)                                                                 &kp LC(Y)       &kp UP_ARROW    &kp UP_ARROW     &kp UP_ARROW     &kp UP_ARROW
-&kp LC(A)            &kp LC(S)               &kp LG(TAB)  &kp LC(F)  &kp LG(P)                &kp LA(TAB)             &kp LEFT_ARROW           &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW
+&all_copy            &kp LC(S)               &kp LG(TAB)  &kp LC(F)  &kp LG(P)                &kp LA(TAB)             &kp LEFT_ARROW           &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW
 &kp LC(Z)            &kp LC(X)               &kp LC(C)    &kp LC(V)  &kp LC(B)                &kp LS(LC(LEFT_ARROW))  &kp LS(LC(RIGHT_ARROW))  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp DOWN_ARROW
 &kp LA(LEFT_ARROW)   &kp LG(LC(LEFT_ARROW))  &kp LC(Z)    &kp LC(Y)  &kp LG(LC(RIGHT_ARROW))  &kp LA(RIGHT_ARROW)     &trans                   &kp LANGUAGE_1                                                    &trans
             >;
