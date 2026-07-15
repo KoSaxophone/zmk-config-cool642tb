@@ -214,7 +214,7 @@
         parn: parn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(N7) &kp LS(N8) &kp LEFT_ARROW>;
+            bindings = <&kp LS(N8) &kp LS(N9) &kp LEFT_ARROW>;
             label = "PARN";
         };
 
