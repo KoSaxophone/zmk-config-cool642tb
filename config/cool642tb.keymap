@@ -212,10 +212,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E      &kp R         &kp T                                                                     &mt LC(Y) Y        &kp U  &mt LS(MINUS) I      &mt LS(EQUAL) O        &mt MINUS P
-&kp A           &kp S         &kp D      &kp F         &kp G             &kp LS(LG(S))            &mt LS(INTERNATIONAL_1) MINUS  &kp H              &kp J  &kp K                &kp L                  &mt RBKT ENTER
-&kp Z           &kp X         &kp C      &kp V         &kp B             &mt LEFT_SHIFT LS(HOME)  &mt LEFT_CONTROL LS(END)       &kp N              &kp M  &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
-&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 4 LEFT_SHIFT  &lt 2 SPACE              &lt 1 SPACE                    &lt 3 RIGHT_SHIFT                                                     &lt 5 INTERNATIONAL_3
+&kp Q           &kp W         &kp E      &kp R         &kp T                                                                     &mt LC(Y) Y      &kp U  &mt LS(MINUS) I      &mt LS(EQUAL) O        &mt MINUS P
+&kp A           &kp S         &kp D      &kp F         &kp G             &kp LS(LG(S))            &mt LS(INTERNATIONAL_1) MINUS  &kp H            &kp J  &kp K                &kp L                  &mt RBKT ENTER
+&kp Z           &kp X         &kp C      &kp V         &kp B             &mt LEFT_SHIFT LS(HOME)  &mt LEFT_CONTROL LS(END)       &kp N            &kp M  &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
+&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 4 LEFT_SHIFT  &lt 2 SPACE              &lt 1 SPACE                    &lt 3 BACKSPACE                                                     &lt 5 INTERNATIONAL_3
             >;
 
             sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
