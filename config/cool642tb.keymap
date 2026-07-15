@@ -245,6 +245,13 @@
             bindings = <&kp LS(N7) &kp LS(N7) &kp LEFT_ARROW>;
             label = "QUOT_SINGLE";
         };
+
+        quot_back: quot_back {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp LS(LEFT_BRACKET) &kp LEFT_ARROW>;
+            label = "QUOT_BACK";
+        };
     };
 
     keymap {
@@ -296,7 +303,7 @@
 
         SYMBOL_RIGHT {
             bindings = <
-&kp LS(NUMBER_1)  &quot_double    &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                              &kp LS(NUMBER_6)   &quot_single  &parn          &kp LS(NUMBER_9)  &kp LS(LBKT)
+&kp LS(NUMBER_1)  &quot_double    &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                              &kp LS(NUMBER_6)   &quot_single  &parn          &kp LS(NUMBER_9)  &quot_back
 &kp LBKT          &kp LEFT_ARROW  &kp LEFT_ARROW    &kp RIGHT_ARROW   &kp RIGHT_ARROW   &kp LC(LS(ESCAPE))  &parn   &kp LS(N9)         &kp J         &kp K          &kp L             &kp RBKT
 &kp Z             &kp X           &kp DOWN_ARROW    &kp DOWN_ARROW    &kp B             &kp LC(N0)          &brac   &kp LS(BACKSLASH)  &kp M         &kp SEMICOLON  &kp SINGLE_QUOTE  &kp BACKSLASH
 &kp LEFT_SHIFT    &kp LEFT_GUI    &kp LEFT_CONTROL  &kp LEFT_ALT      &trans            &kp LANGUAGE_2      &angle  &kp LS(PERIOD)                                                    &kp INT3
