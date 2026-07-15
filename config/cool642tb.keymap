@@ -266,7 +266,7 @@
 &kp LG(PAUSE_BREAK)  &kp LA(LC(DELETE))  &kp LS(N3)   &kp LC(R)  &kp LG(K)                                                     &kp LC(Y)       &kp UP_ARROW    &kp UP_ARROW     &kp UP_ARROW     &kp UP_ARROW
 &all_copy            &kp LC(S)           &kp LG(TAB)  &kp LC(F)  &kp LG(P)    &kp LA(TAB)             &kp LEFT_ARROW           &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW
 &kp LC(Z)            &kp LC(X)           &kp LC(C)    &kp LC(V)  &kp LC(B)    &kp LS(LC(LEFT_ARROW))  &kp LS(LC(RIGHT_ARROW))  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp DOWN_ARROW
-&kp LA(LEFT_ARROW)   &kp LC(LS(TAB))     &kp LC(Z)    &kp LC(Y)  &kp LC(TAB)  &kp LA(RIGHT_ARROW)     &trans                   &kp LANGUAGE_1                                                    &trans
+&kp LS(HOME)         &kp LC(LS(TAB))     &kp LC(Z)    &kp LC(Y)  &kp LC(TAB)  &kp LS(END)             &trans                   &kp LANGUAGE_1                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LEFT_ARROW) LC(RIGHT)>;
