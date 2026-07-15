@@ -210,6 +210,27 @@
             bindings = <&kp LC(A) &kp LC(C)>;
             label = "ALL_COPY";
         };
+
+        parn: parn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N7) &kp LS(N8) &kp LEFT_ARROW>;
+            label = "PARN";
+        };
+
+        brac: brac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(RBKT) &kp LS(BACKSLASH) &kp LEFT_ARROW>;
+            label = "BRAC";
+        };
+
+        angle: angle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(COMMA) &kp PERIOD &kp LEFT_ARROW>;
+            label = "ANGLE";
+        };
     };
 
     keymap {
@@ -261,10 +282,10 @@
 
         SYMBOL_RIGHT {
             bindings = <
-&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                     &kp LS(NUMBER_6)   &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(LBKT)
-&kp LBKT          &kp LEFT_ARROW    &kp LEFT_ARROW    &kp RIGHT_ARROW   &kp RIGHT_ARROW   &kp LC(LS(ESCAPE))  &kp LS(N8)     &kp LS(N9)         &kp J             &kp K             &kp L             &kp RBKT
-&kp Z             &kp X             &kp DOWN_ARROW    &kp DOWN_ARROW    &kp B             &kp LC(N0)          &kp LS(RBKT)   &kp LS(BACKSLASH)  &kp M             &kp SEMICOLON     &kp SINGLE_QUOTE  &kp BACKSLASH
-&kp LEFT_SHIFT    &kp LEFT_GUI      &kp LEFT_CONTROL  &kp LEFT_ALT      &trans            &kp LANGUAGE_2      &kp LS(COMMA)  &kp LS(PERIOD)                                                           &kp INT3
+&kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                              &kp LS(NUMBER_6)   &kp LS(NUMBER_7)  &parn          &kp LS(NUMBER_9)  &kp LS(LBKT)
+&kp LBKT          &kp LEFT_ARROW    &kp LEFT_ARROW    &kp RIGHT_ARROW   &kp RIGHT_ARROW   &kp LC(LS(ESCAPE))  &parn   &kp LS(N9)         &kp J             &kp K          &kp L             &kp RBKT
+&kp Z             &kp X             &kp DOWN_ARROW    &kp DOWN_ARROW    &kp B             &kp LC(N0)          &brac   &kp LS(BACKSLASH)  &kp M             &kp SEMICOLON  &kp SINGLE_QUOTE  &kp BACKSLASH
+&kp LEFT_SHIFT    &kp LEFT_GUI      &kp LEFT_CONTROL  &kp LEFT_ALT      &trans            &kp LANGUAGE_2      &angle  &kp LS(PERIOD)                                                        &kp INT3
             >;
 
             sensor-bindings = <&inc_dec_kp LC(MINUS) LC(SEMI)>;
