@@ -224,7 +224,7 @@
 &kp LA(LEFT_ARROW)   &kp LG(LC(LEFT_ARROW))  &kp LC(Z)    &kp LC(Y)  &kp LG(LC(RIGHT_ARROW))  &kp LA(RIGHT_ARROW)     &trans                   &kp LANGUAGE_1                                                    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT>;
+            sensor-bindings = <&inc_dec_kp LC(LEFT_ARROW) LC(RIGHT)>;
         };
 
         NUMBER {
