@@ -303,10 +303,10 @@
 
         SYMBOL_RIGHT {
             bindings = <
-&kp LG(N1)      &kp LG(N2)        &kp LG(N3)        &kp LG(N4)       &kp LG(N5)                                   &kp LG(N6)         &kp LG(N7)  &kp LG(N8)     &kp LG(N9)        &kp LG(N0)
-&kp LBKT        &kp LEFT_ARROW    &kp LEFT_ARROW    &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp LC(LS(ESCAPE))  &parn   &kp LS(N9)         &kp J       &kp K          &kp L             &kp RBKT
-&kp Z           &mt LA(F4) LC(W)  &kp DOWN_ARROW    &kp DOWN_ARROW   &kp B            &kp LC(N0)          &brac   &kp LS(BACKSLASH)  &kp M       &kp SEMICOLON  &kp SINGLE_QUOTE  &kp BACKSLASH
-&kp LEFT_SHIFT  &kp LEFT_GUI      &kp LEFT_CONTROL  &kp LEFT_ALT     &trans           &kp LANGUAGE_2      &angle  &kp LS(PERIOD)                                                  &kp INT3
+&kp LG(N1)      &kp LG(N2)        &kp LG(N3)        &kp LG(N4)      &kp LG(N5)                              &kp LS(N6)         &quot_single  &parn          &kp LS(N9)        &quot_back
+&kp LG(N6)      &kp LG(N7)        &kp LG(N8)        &kp LG(N9)      &kp LG(N0)  &kp LC(LS(ESCAPE))  &parn   &kp LS(N9)         &kp J         &kp K          &kp L             &kp RBKT
+&kp Z           &mt LA(F4) LC(W)  &kp DOWN_ARROW    &kp DOWN_ARROW  &kp B       &kp LC(N0)          &brac   &kp LS(BACKSLASH)  &kp M         &kp SEMICOLON  &kp SINGLE_QUOTE  &kp BACKSLASH
+&kp LEFT_SHIFT  &kp LEFT_GUI      &kp LEFT_CONTROL  &kp LEFT_ALT    &trans      &kp LANGUAGE_2      &angle  &kp LS(PERIOD)                                                    &kp INT3
             >;
 
             sensor-bindings = <&inc_dec_kp LC(MINUS) LC(SEMI)>;
