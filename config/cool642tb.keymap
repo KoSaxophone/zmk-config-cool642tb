@@ -302,7 +302,7 @@
 &kp LS(NUMBER_1)        &quot_double            &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                         &kp LS(UP_ARROW)    &kp LS(UP_ARROW)    &kp LS(UP_ARROW)     &kp LS(UP_ARROW)     &kp LS(UP_ARROW)
 &kp LBKT                &kp LC(S)               &kp D             &kp LC(F)         &kp LG(P)                &kp LG(PERIOD)           &none  &kp LS(LEFT_ARROW)  &kp LS(LEFT_ARROW)  &kp LS(RIGHT_ARROW)  &kp LS(RIGHT_ARROW)  &kp LS(RIGHT_ARROW)
 &kp LC(Z)               &kp LC(X)               &kp LC(C)         &kp LC(V)         &kp LC(B)                &kp LA(LEFT_ARROW)       &none  &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)   &kp LS(DOWN_ARROW)   &kp LS(DOWN_ARROW)
-&kp LS(LC(LEFT_ARROW))  &kp LC(LG(LEFT_ARROW))  &kp LC(HOME)      &kp LC(END)       &kp LC(LG(RIGHT_ARROW))  &kp LS(LC(RIGHT_ARROW))  &none  &trans                                                                            &bt BT_SEL 1
+&kp LS(LC(LEFT_ARROW))  &kp LC(LG(LEFT_ARROW))  &kp LC(MINUS)     &kp LC(SEMI)      &kp LC(LG(RIGHT_ARROW))  &kp LS(LC(RIGHT_ARROW))  &none  &trans                                                                            &bt BT_SEL 1
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT_ARROW))>;
@@ -313,7 +313,7 @@
 &kp LG(N1)      &kp LG(N2)        &kp LG(N3)        &kp LG(N4)      &kp LG(N5)                              &kp LS(N6)         &quot_single  &parn          &kp LS(N9)        &quot_back
 &kp LG(N6)      &kp LG(N7)        &kp LG(N8)        &kp LG(N9)      &kp LG(N0)  &kp LC(LS(ESCAPE))  &parn   &kp LS(N9)         &kp J         &kp K          &kp L             &kp RBKT
 &kp Z           &mt LA(F4) LC(W)  &kp DOWN_ARROW    &kp DOWN_ARROW  &kp B       &kp LC(N0)          &brac   &kp LS(BACKSLASH)  &kp M         &kp SEMICOLON  &kp SINGLE_QUOTE  &kp BACKSLASH
-&kp LEFT_SHIFT  &kp LEFT_GUI      &kp LEFT_CONTROL  &kp LEFT_ALT    &trans      &kp LANGUAGE_2      &angle  &kp LS(PERIOD)                                                    &kp INT3
+&kp LEFT_SHIFT  &kp LEFT_GUI      &kp LEFT_CONTROL  &kp LEFT_ALT    &trans      &none               &angle  &kp LS(PERIOD)                                                    &kp INT3
             >;
 
             sensor-bindings = <&inc_dec_kp LC(MINUS) LC(SEMI)>;
