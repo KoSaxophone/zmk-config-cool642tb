@@ -267,8 +267,8 @@
         default_layer {
             bindings = <
 &kp Q                    &kp W     &kp E      &kp R         &kp T                                                    &kp Y             &mt LS(EQUAL) U  &mt LS(MINUS) I      &mt MINUS O            &kp P
-&kp A                    &kp S     &lt 1 D    &kp F         &kp G        &kp LS(LG(S))  &mt LS(INTERNATIONAL_1) F24  &kp H             &kp J            &lt 1 K              &kp L                  &mt RBKT ENTER
-&kp Z                    &kp X     &kp C      &kp V         &mt SPACE B  &none          &none                        &kp N             &kp M            &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
+&kp A                    &kp S     &kp D      &kp F         &kp G        &kp LS(LG(S))  &mt LS(INTERNATIONAL_1) F24  &kp H             &kp J            &lt 1 K              &kp L                  &mt RBKT ENTER
+&kp Z                    &kp X     &kp C      &kp V         &kp B        &none          &none                        &kp N             &kp M            &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
 &mt LEFT_SHIFT LS(HOME)  &kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE    &lt 1 BACKSPACE              &lt 3 LANGUAGE_1                                                               &lt 5 INTERNATIONAL_3
             >;
 
@@ -288,10 +288,10 @@
 
         NUMBER {
             bindings = <
-&kp LS(N1)      &quot_double    &kp LS(N3)      &kp LS(N4)       &kp LS(N5)                                            &kp LS(SEMI)          &kp MINUS  &kp N7        &kp N8  &kp N9
-&kp LBKT        &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp LC(N0)  &kp LS(INTERNATIONAL_1)  &kp LS(SINGLE_QUOTE)  &none      &kp N4        &kp N5  &kp N6
-&kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp LG(L)   &none                    &none                 &none      &kp NUMBER_1  &kp N2  &kp N3
-&kp LC(MINUS)   &none           &none           &none            &kp LC(SEMI)     &trans      &kp SINGLE_QUOTE         &kp N0                                                 &none
+&kp LS(N1)      &quot_double    &kp LS(N3)      &kp LS(N4)       &kp LS(N5)                                           &kp LS(SEMI)          &kp MINUS  &kp N7        &kp N8  &kp N9
+&kp LBKT        &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &none      &kp LS(INTERNATIONAL_1)  &kp LS(SINGLE_QUOTE)  &none      &kp N4        &kp N5  &kp N6
+&kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp LG(L)  &none                    &none                 &none      &kp NUMBER_1  &kp N2  &kp N3
+&kp LC(MINUS)   &none           &none           &none            &kp LC(SEMI)     &trans     &kp SINGLE_QUOTE         &kp N0                                                 &none
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
@@ -312,7 +312,7 @@
             bindings = <
 &kp LG(N1)      &kp LG(N2)        &kp LG(N3)        &kp LG(N4)      &kp LG(N5)                      &kp LS(N6)         &quot_single  &parn          &kp LS(N9)        &quot_back
 &kp LG(N6)      &kp LG(N7)        &kp LG(N8)        &kp LG(N9)      &kp LG(N0)  &kp LC(N0)  &parn   &kp LS(N9)         &kp J         &kp K          &kp L             &kp RBKT
-&kp Z           &mt LA(F4) LC(W)  &kp DOWN_ARROW    &kp DOWN_ARROW  &kp B       &kp LC(N0)  &brac   &kp LS(BACKSLASH)  &kp M         &kp SEMICOLON  &kp SINGLE_QUOTE  &kp BACKSLASH
+&kp Z           &mt LA(F4) LC(W)  &kp DOWN_ARROW    &kp DOWN_ARROW  &kp B       &none       &brac   &kp LS(BACKSLASH)  &kp M         &kp SEMICOLON  &kp SINGLE_QUOTE  &kp BACKSLASH
 &kp LEFT_SHIFT  &kp LEFT_GUI      &kp LEFT_CONTROL  &kp LEFT_ALT    &trans      &none       &angle  &kp LS(PERIOD)                                                    &kp INT3
             >;
 
@@ -338,13 +338,6 @@
 
 / {
     behaviors {
-        slow_sc: slow_sc {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_AC_SCROLL_UP>, <&kp C_AC_SCROLL_DOWN>;
-
-            tap-ms = <120>; /* ここを長くして、連打を抑えます */
-        };
     };
 };
 
