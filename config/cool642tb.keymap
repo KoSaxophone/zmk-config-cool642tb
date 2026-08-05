@@ -263,7 +263,7 @@
         line_cpy: line_cpy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp HOME &kp LSHIFT &kp END &kp LC(C)>;
+            bindings = <&kp HOME &kp LSHIFT &kp LS(END) &kp LC(C)>;
             label = "LINE_CPY";
         };
     };
