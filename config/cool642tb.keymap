@@ -259,6 +259,13 @@
             bindings = <&kp LC(LS(P)) &kp R &kp E &kp L &kp O &kp A &kp D &kp SPACE &kp W &kp I &kp N &kp D &kp O &kp W &kp RET>;
             label = "VSCODE_RELOAD";
         };
+
+        line_cpy: line_cpy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp HOME &kp LSHIFT &kp END &kp LC(C)>;
+            label = "LINE_CPY";
+        };
     };
 
     keymap {
@@ -268,7 +275,7 @@
             bindings = <
 &kp Q                    &kp W     &kp E      &kp R         &kp T                                                    &kp Y             &mt LS(EQUAL) U  &mt LS(MINUS) I      &mt MINUS O            &kp P
 &kp A                    &kp S     &kp D      &kp F         &kp G        &kp LS(LG(S))  &mt LS(INTERNATIONAL_1) F24  &kp H             &kp J            &lt 1 K              &kp L                  &mt RBKT ENTER
-&kp Z                    &kp X     &kp C      &kp V         &kp B        &none          &none                        &kp N             &kp M            &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
+&kp Z                    &kp X     &kp C      &kp V         &kp B        &none          &line_cpy                    &kp N             &kp M            &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
 &mt LEFT_SHIFT LS(HOME)  &kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE    &lt 1 BACKSPACE              &lt 3 LANGUAGE_1                                                               &lt 5 INTERNATIONAL_3
             >;
 
