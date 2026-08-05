@@ -117,13 +117,13 @@
             key-positions = <7 8 9>;
         };
 
-        roman {
-            bindings = <&kp LANG2>;
+        space {
+            bindings = <&kp SPACE>;
             key-positions = <38 39>;
         };
 
-        kana {
-            bindings = <&kp LANGUAGE_1>;
+        backspace {
+            bindings = <&kp BSPC>;
             key-positions = <40 41>;
         };
 
