@@ -355,12 +355,6 @@
 
 /* 1回の入力が確実に「1回分」として認識されるよう、信号の間隔をさらに広げます */
 
-&slow_sc { tap-ms = <200>; };
-
 &left_encoder { resolution = <16>; };
 
 &right_encoder { resolution = <16>; };
-
-&slow_sc {
-    tap-ms = <300>; /* さらに信号の間隔を広げて「連射」を完全に殺します */
-};
