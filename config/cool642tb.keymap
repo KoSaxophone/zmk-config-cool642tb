@@ -282,7 +282,7 @@
             bindings = <
 &kp Q                    &kp W     &kp E      &kp R         &kp T                                                    &kp Y             &mt LS(EQUAL) U  &mt LS(MINUS) I      &mt MINUS O            &kp P
 &kp A                    &kp S     &kp D      &kp F         &kp G        &kp LS(LG(S))  &mt LS(INTERNATIONAL_1) F24  &kp H             &kp J            &lt 1 K              &kp L                  &mt RBKT ENTER
-&kp Z                    &kp X     &kp C      &kp V         &kp B        &thino         &line_cpy                    &kp N             &kp M            &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
+&kp Z                    &kp X     &kp C      &kp V         &kp B        &line_cpy      &thino                       &kp N             &kp M            &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
 &mt LEFT_SHIFT LS(HOME)  &kp LGUI  &kp LCTRL  &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE    &lt 1 BACKSPACE              &lt 3 LANGUAGE_1                                                               &lt 5 INTERNATIONAL_3
             >;
 
