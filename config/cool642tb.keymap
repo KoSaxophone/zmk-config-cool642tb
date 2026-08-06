@@ -293,7 +293,7 @@
             bindings = <
 &kp LG(PAUSE_BREAK)  &kp LA(LC(DELETE))  &kp LS(N3)       &kp LC(R)          &kp LG(K)                                         &kp LC(Y)       &kp UP_ARROW    &kp UP_ARROW     &kp UP_ARROW     &kp UP_ARROW
 &all_copy            &kp LC(S)           &kp LG(TAB)      &kp LC(F)          &kp LG(P)            &none        &kp LEFT_ARROW  &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW
-&kp LC(Z)            &kp LC(X)           &kp LC(C)        &kp LC(V)          &kp LC(B)            &none        &none           &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp DOWN_ARROW
+&kp LC(Z)            &kp LC(X)           &kp LC(C)        &kp LC(V)          &kp LC(B)            &kp LG(V)    &none           &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp DOWN_ARROW
 &kp LS(HOME)         &kp LA(LEFT_ARROW)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LA(RIGHT_ARROW)  &kp LS(END)  &trans          &kp LANGUAGE_1                                                    &trans
             >;
 
