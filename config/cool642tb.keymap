@@ -289,6 +289,22 @@
             label = "STARTUP";
             wait-ms = <400>;
         };
+
+        copyRight: copyRight {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(RIGHT_ARROW) &kp LC(C)>;
+            label = "COPYRIGHT";
+            wait-ms = <300>;
+        };
+
+        copyLeft: copyLeft {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_ARROW) &kp LC(C)>;
+            label = "COPYLEFT";
+            wait-ms = <300>;
+        };
     };
 
     keymap {
@@ -329,10 +345,10 @@
 
         SYMBOL_LEFT {
             bindings = <
-&kp LS(NUMBER_1)        &quotDouble             &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                         &kp LS(UP_ARROW)    &kp LS(UP_ARROW)    &kp LS(UP_ARROW)     &kp LS(UP_ARROW)     &kp LS(UP_ARROW)
-&kp LBKT                &kp LC(S)               &kp D             &kp LC(F)         &kp LG(P)                &kp LG(PERIOD)           &none  &kp LS(LEFT_ARROW)  &kp LS(LEFT_ARROW)  &kp LS(RIGHT_ARROW)  &kp LS(RIGHT_ARROW)  &kp LS(RIGHT_ARROW)
-&kp LC(Z)               &kp LC(X)               &kp LC(C)         &kp LC(V)         &kp LC(B)                &none                    &none  &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)   &kp LS(DOWN_ARROW)   &kp LS(DOWN_ARROW)
-&kp LS(LC(LEFT_ARROW))  &kp LC(LG(LEFT_ARROW))  &kp LC(MINUS)     &kp LC(SEMI)      &kp LC(LG(RIGHT_ARROW))  &kp LS(LC(RIGHT_ARROW))  &none  &trans                                                                            &bt BT_SEL 1
+&kp LS(NUMBER_1)        &quotDouble             &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                         &kp LS(UP_ARROW)    &kp LS(UP_ARROW)    &kp LS(UP_ARROW)    &kp LS(UP_ARROW)    &kp LS(UP_ARROW)
+&kp LBKT                &kp LC(S)               &kp D             &kp LC(F)         &kp LG(P)                &kp LG(PERIOD)           &none  &copyLeft           &copyLeft           &copyRight          &copyRight          &copyRight
+&kp LC(Z)               &kp LC(X)               &kp LC(C)         &kp LC(V)         &kp LC(B)                &none                    &none  &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)
+&kp LS(LC(LEFT_ARROW))  &kp LC(LG(LEFT_ARROW))  &kp LC(MINUS)     &kp LC(SEMI)      &kp LC(LG(RIGHT_ARROW))  &kp LS(LC(RIGHT_ARROW))  &none  &trans                                                                          &bt BT_SEL 1
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT_ARROW))>;
