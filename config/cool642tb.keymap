@@ -295,7 +295,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(RIGHT_ARROW) &kp LC(C)>;
             label = "COPYRIGHT";
-            wait-ms = <300>;
         };
 
         copyLeft: copyLeft {
@@ -303,7 +302,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LEFT_ARROW) &kp LC(C)>;
             label = "COPYLEFT";
-            wait-ms = <300>;
         };
     };
 
