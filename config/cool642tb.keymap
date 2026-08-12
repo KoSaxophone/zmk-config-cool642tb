@@ -279,7 +279,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LA(LS(D))) &kp LC(V)>;
             label = "DATEPASTE";
-            wait-ms = <100>;
+            wait-ms = <200>;
         };
     };
 
