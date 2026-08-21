@@ -285,7 +285,7 @@
         startup1: startup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(N1) &kp LG(N4) &kp LG(N6) &kp LG(N7) &kp LG(N8)>;
+            bindings = <&kp LG(N1) &kp LG(N6) &kp LG(N7) &kp LG(N8)>;
             label = "STARTUP";
             wait-ms = <400>;
         };
@@ -334,7 +334,7 @@
             bindings = <
 &kp Q                    &kp W        &kp E        &kp R         &kp T                                                    &kp Y             &mt LS(EQUAL) U  &mt LS(MINUS) I      &mt MINUS O            &kp P
 &mt LC(A) A              &mt LC(S) S  &kp D        &mt LC(F) F   &kp G        &kp LG(V)    &mt LS(INTERNATIONAL_1) LG(V)  &mt LC(H) H       &kp J            &lt 1 K              &kp L                  &mt RBKT ENTER
-&kp Z                    &mt LC(X) X  &mt LC(C) C  &mt LC(V) V   &kp B        &cpyLine     &kp LG(LS(S))                  &kp N             &kp M            &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
+&kp Z                    &mt LC(X) X  &mt LC(C) C  &mt LC(V) V   &kp B        &cpyLine     &none                          &kp N             &kp M            &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
 &mt LEFT_SHIFT LS(HOME)  &kp LGUI     &kp LCTRL    &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE  &lt 1 BACKSPACE                &lt 3 LANGUAGE_1                                                               &lt 5 INTERNATIONAL_3
             >;
 
@@ -343,10 +343,10 @@
 
         shortcut {
             bindings = <
-&kp LG(PAUSE_BREAK)  &kp LA(LC(DELETE))  &kp LS(N3)       &kp LC(R)          &kp LG(K)                                  &kp LC(Y)       &kp UP_ARROW    &kp UP_ARROW     &kp UP_ARROW     &kp UP_ARROW
-&copyAll             &kp LC(S)           &kp LG(TAB)      &kp LC(F)          &kp LG(P)            &none        &kp F24  &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW
-&kp LC(Z)            &kp LC(X)           &kp LC(C)        &kp LC(V)          &kp LC(B)            &kp LG(V)    &none    &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp DOWN_ARROW
-&kp LS(HOME)         &kp LA(LEFT_ARROW)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LA(RIGHT_ARROW)  &kp LS(END)  &trans   &kp LANGUAGE_1                                                    &trans
+&kp LG(PAUSE_BREAK)  &kp LA(LC(DELETE))  &kp LS(N3)       &kp LC(R)          &kp LG(K)                                        &kp LC(Y)       &kp UP_ARROW    &kp UP_ARROW     &kp UP_ARROW     &kp UP_ARROW
+&copyAll             &kp LC(S)           &kp LG(TAB)      &kp LC(F)          &kp LG(P)            &none        &kp F24        &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW
+&kp LC(Z)            &kp LC(X)           &kp LC(C)        &kp LC(V)          &kp LC(B)            &kp LG(V)    &kp LG(LS(S))  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp DOWN_ARROW
+&kp LS(HOME)         &kp LA(LEFT_ARROW)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LA(RIGHT_ARROW)  &kp LS(END)  &trans         &kp LANGUAGE_1                                                    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LEFT_ARROW) LC(RIGHT)>;
