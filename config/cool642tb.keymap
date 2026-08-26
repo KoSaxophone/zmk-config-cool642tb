@@ -354,10 +354,10 @@
 
         NUMBER {
             bindings = <
-&kp LS(N1)      &quotDouble     &kp LS(N3)      &kp LS(N4)       &kp LS(N5)                                           &kp LS(SEMI)          &kp MINUS  &kp N7        &kp N8  &kp N9
-&kp LBKT        &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &none      &kp LS(INTERNATIONAL_1)  &kp LS(SINGLE_QUOTE)  &none      &kp N4        &kp N5  &kp N6
-&kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp LG(L)  &none                    &none                 &none      &kp NUMBER_1  &kp N2  &kp N3
-&kp LC(MINUS)   &none           &none           &none            &kp LC(SEMI)     &trans     &kp SINGLE_QUOTE         &kp N0                                                 &none
+&kp LS(N1)      &quotDouble     &kp LS(N3)      &kp LS(N4)       &kp LS(N5)                                           &kp LS(SEMI)          &kp MINUS    &kp N7        &kp N8  &kp N9
+&kp LBKT        &kp LEFT_ARROW  &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp RIGHT_ARROW  &none      &kp LS(INTERNATIONAL_1)  &kp LS(SINGLE_QUOTE)  &kp LS(SQT)  &kp N4        &kp N5  &kp N6
+&kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW  &kp DOWN_ARROW   &kp DOWN_ARROW   &kp LG(L)  &none                    &none                 &none        &kp NUMBER_1  &kp N2  &kp N3
+&kp LC(MINUS)   &none           &none           &none            &kp LC(SEMI)     &trans     &kp SINGLE_QUOTE         &kp N0                                                   &none
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
