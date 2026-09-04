@@ -330,7 +330,7 @@
 &mt LEFT_SHIFT LS(HOME)  &kp LGUI  &kp LCTRL    &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE  &lt 1 BACKSPACE              &lt 3 LANGUAGE_1                                                               &lt 5 INTERNATIONAL_3
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         shortcut {
@@ -352,7 +352,7 @@
 &kp LC(MINUS)   &none           &none           &none            &kp LC(SEMI)     &trans     &kp SINGLE_QUOTE         &kp N0                                                   &none
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN_ARROW>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
         SYMBOL_LEFT {
