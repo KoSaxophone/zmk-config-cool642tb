@@ -307,14 +307,6 @@
             bindings = <&kp LS(LC(LEFT_ARROW)) &kp LC(C)>;
             label = "COPYLEFTWORD";
         };
-
-        startup2: startup2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(N6) &kp LG(N5) &kp LG(N9) &kp LG(N0)>;
-            label = "STARTUP2";
-            wait-ms = <400>;
-        };
     };
 
     keymap {
@@ -356,7 +348,7 @@
         SYMBOL_LEFT {
             bindings = <
 &kp LS(NUMBER_1)  &quotDouble             &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                    &none      &kp LS(UP_ARROW)    &kp LS(UP_ARROW)    &kp LS(UP_ARROW)    &none
-&kp LBKT          &kp LC(S)               &kp D             &kp LC(F)         &kp LG(P)                &kp LG(PERIOD)  &startup2  &copyLeft  &copyLeft           &copyRight          &copyRight          &copyRight
+&kp LBKT          &kp LC(S)               &kp D             &kp LC(F)         &kp LG(P)                &kp LG(PERIOD)  &none      &copyLeft  &copyLeft           &copyRight          &copyRight          &copyRight
 &kp LC(Z)         &kp LC(X)               &kp LC(C)         &kp LC(V)         &kp LC(B)                &none           &startup1  &none      &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)  &none
 &copyLeftWord     &kp LC(LG(LEFT_ARROW))  &kp LC(MINUS)     &kp LC(SEMI)      &kp LC(LG(RIGHT_ARROW))  &copyRightWord  &none      &trans                                                                 &bt BT_SEL 1
             >;
