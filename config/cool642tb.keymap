@@ -398,10 +398,10 @@
 
         autoMouce {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB1  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &to 1   &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                              &trans
             >;
         };
     };
