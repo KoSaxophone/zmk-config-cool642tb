@@ -126,6 +126,16 @@
             bindings = <&kp LC(Y)>;
             key-positions = <5 6>;
         };
+
+        click_l {
+            bindings = <&mkp MB1>;
+            key-positions = <19 18>;
+        };
+
+        click_r {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
+        };
     };
 
     behaviors {
@@ -381,7 +391,7 @@
         autoMouce {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                  &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &to 1   &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                              &trans
             >;
