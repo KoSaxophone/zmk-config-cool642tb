@@ -37,16 +37,6 @@
             key-positions = <8 7>;
         };
 
-        click_left {
-            bindings = <&mkp MB1>;
-            key-positions = <18 19>;
-        };
-
-        click_right {
-            bindings = <&mkp MB2>;
-            key-positions = <19 20>;
-        };
-
         down1 {
             bindings = <&kp DOWN_ARROW>;
             key-positions = <34 35 36>;
