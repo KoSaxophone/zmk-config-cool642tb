@@ -332,7 +332,7 @@
         default_layer {
             bindings = <
 &kp Q                    &kp W     &kp E        &kp R         &kp T                                                         &kp Y             &mt LS(EQUAL) U  &mt LS(MINUS) I      &mt MINUS O            &kp P
-&kp A                    &kp S     &kp D        &lt 0 F       &kp G        &kp F24      &mt LS(INTERNATIONAL_1) LC(LS(N4))  &kp H             &kp J            &lt 1 K              &kp L                  &mt RBKT ENTER
+&kp A                    &kp S     &kp D        &kp F         &kp G        &kp F24      &mt LS(INTERNATIONAL_1) LC(LS(N4))  &kp H             &kp J            &lt 1 K              &kp L                  &mt RBKT ENTER
 &kp Z                    &kp X     &mt LC(C) C  &kp V         &kp B        &selectLine  &cpyLine                            &kp N             &kp M            &mt LS(COMMA) COMMA  &mt LS(PERIOD) PERIOD  &mt BSLH FSLH
 &mt LEFT_SHIFT LS(HOME)  &kp LGUI  &kp LCTRL    &kp LEFT_ALT  &lt 4 LANG2  &lt 2 SPACE  &lt 1 BACKSPACE                     &lt 3 LANGUAGE_1                                                               &lt 5 INTERNATIONAL_3
             >;
@@ -364,10 +364,10 @@
 
         SYMBOL_LEFT {
             bindings = <
-&kp LS(NUMBER_1)  &quotDouble             &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                    &none      &kp LS(UP_ARROW)    &kp LS(UP_ARROW)    &kp LS(UP_ARROW)    &none
-&kp LBKT          &kp LC(S)               &kp D             &kp LC(F)         &kp LG(P)                &kp LG(PERIOD)  &none      &copyLeft  &copyLeft           &copyRight          &copyRight          &copyRight
-&kp LC(Z)         &kp LC(X)               &kp LC(C)         &kp LC(V)         &kp LC(B)                &none           &startup1  &none      &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)  &none
-&copyLeftWord     &kp LC(LG(LEFT_ARROW))  &kp LC(MINUS)     &kp LC(SEMI)      &kp LC(LG(RIGHT_ARROW))  &copyRightWord  &none      &trans                                                                 &bt BT_SEL 1
+&kp LS(NUMBER_1)  &quotDouble             &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                                    &none   &kp LS(UP_ARROW)    &kp LS(UP_ARROW)    &kp LS(UP_ARROW)     &none
+&kp LBKT          &kp LC(S)               &kp D             &kp LC(F)         &kp LG(P)                &kp LG(PERIOD)  &none      &none   &kp LS(LEFT_ARROW)  &none               &kp LS(RIGHT_ARROW)  &kp LS(RIGHT_ARROW)
+&kp LC(Z)         &kp LC(X)               &kp LC(C)         &kp LC(V)         &kp LC(B)                &none           &startup1  &none   &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(DOWN_ARROW)   &none
+&copyLeftWord     &kp LC(LG(LEFT_ARROW))  &kp LC(MINUS)     &kp LC(SEMI)      &kp LC(LG(RIGHT_ARROW))  &copyRightWord  &none      &trans                                                               &bt BT_SEL 1
             >;
 
             sensor-bindings = <&inc_dec_kp LC(LS(LEFT_ARROW)) LC(LS(RIGHT_ARROW))>;
