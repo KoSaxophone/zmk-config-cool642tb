@@ -136,6 +136,21 @@
             bindings = <&mkp MB2>;
             key-positions = <19 20>;
         };
+
+        rightEsc {
+            bindings = <&kp ESC>;
+            key-positions = <41 7 8>;
+        };
+
+        rightTab {
+            bindings = <&kp TAB>;
+            key-positions = <19 20>;
+        };
+
+        rightCapsLock {
+            bindings = <&kp CAPS>;
+            key-positions = <41 31 32>;
+        };
     };
 
     behaviors {
