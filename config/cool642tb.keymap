@@ -205,20 +205,6 @@
     };
 
     macros {
-        pw_o2: pw_o2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp N2>;
-            label = "PW_O2";
-        };
-
-        pw_ha: pw_ha {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp H &kp A &kp R &kp M &kp O &kp N0 &kp N2 &kp N1 &kp N0>;
-            label = "PW_HA";
-        };
-
         copyAll: all_copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -338,13 +324,6 @@
             #binding-cells = <0>;
             bindings = <&kp HOME &kp LSHIFT &kp LS(END)>;
             label = "LINE_SELECT";
-        };
-
-        pw_1o: pw_1o {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N1 &kp O>;
-            label = "PW_1O";
         };
     };
 
